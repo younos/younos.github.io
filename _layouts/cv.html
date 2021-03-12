@@ -21,10 +21,11 @@ job_type: data_science
   </div>
 </div>
 
+<!-- CV container -->
 <section id="cv-container" class="cv container">
   <div id="row" class="row">
 
-    <!--Primary part of the CV-->
+    <!-- Primary part of the CV -->
     <div id="primary-section" class="col-md-8">
       {% assign tr = site.data.cv.tr[page.lang] %}
 
@@ -73,10 +74,10 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Page Breaker-->
+      <!-- Page Breaker -->
       <div class="page-breaker"></div>
 
-      <!--Education-->
+      <!-- Education -->
       <div class="subsection">
         <h2>{{ tr.education }} :mortar_board:</h2>
         <hr>
@@ -104,7 +105,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Academic Projects-->
+      <!-- Academic Projects -->
       <div class="subsection">
         <h2>{{ tr.academic_projects }} :computer:</h2>
         <hr>
@@ -128,13 +129,13 @@ job_type: data_science
 
     </div>
 
-    <!--Secondary part of the CV-->
+    <!-- Secondary part of the CV -->
     <div id="secondary-section" class="col-md-4">
 
-      <!--Picture-->
+      <!-- Picture -->
       <img class="picture" src="/assets/images/cv_picture.jpg" >
 
-      <!--Personal Info-->
+      <!-- Personal Info -->
       <div class="subsection">
         <h2>{{ tr.personal_info }}</h2>
         <div id="info">
@@ -144,7 +145,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Contact-->
+      <!-- Contact -->
       <div class="subsection">
         <h2>{{ tr.contact }}</h2>
         {% assign contact = site.data.cv.contact %}
@@ -155,7 +156,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Hard Skills-->
+      <!-- Hard Skills -->
       <div class="subsection">
         <h2>{{ tr.hard_skills | upcase }}</h2>
         {% assign hard_skills = site.data.cv.hard_skills %}
@@ -166,7 +167,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Programming-->
+      <!-- Programming -->
       <div class="subsection">
         <h2>{{ tr.programming | upcase }}</h2>
         {% assign programming_languages = site.data.cv.programming %}
@@ -184,7 +185,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Tools-->
+      <!-- Tools -->
       <div class="subsection">
         <h2>{{ tr.tools | upcase }}</h2>
         {% assign tools_list = site.data.cv.tools %}
@@ -202,10 +203,10 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Page Breaker-->
+      <!-- Page Breaker -->
       <div class="page-breaker"></div>
 
-      <!--Languages-->
+      <!-- Languages -->
       <div class="subsection">
         <h2>{{ tr.languages | upcase }}</h2>
         {% assign languages = site.data.cv.languages %}
@@ -229,7 +230,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Soft Skills-->
+      <!-- Soft Skills -->
       <div class="subsection">
         <h2>{{ tr.soft_skills | upcase }}</h2>
         {% assign soft_skills = site.data.cv.soft_skills %}
@@ -240,7 +241,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--Hobbies-->
+      <!-- Hobbies -->
       <div class="subsection">
         <h2>{{ tr.hobbies | upcase }}</h2>
         {% assign hobbies = site.data.cv.hobbies %}
@@ -251,7 +252,7 @@ job_type: data_science
         </div>
       </div>
 
-      <!--References-->
+      <!-- References -->
       <div class="subsection">
         <h2>{{ tr.references | upcase }}</h2>
         {% assign references = site.data.cv.references %}
