@@ -1,0 +1,57 @@
+# Skills for jobs in Data Science
+data_science:
+
+  - en: Statistics
+    fr: Statistiques
+    de: Statistik
+
+  - en: Machine Learning
+    fr: Apprentissage machine
+    de: Maschinelles Lernen
+  
+  - en: Deep Learning
+    fr: Apprentissage profond
+    de: Tiefes Lernen
+
+  - en: Predictive Modelling
+    fr: Modélisation prédictive
+    de: Vorausschauende Modellierung
+
+  - en: Data Visualization
+    fr: Présentation des données
+    de: Datenvisualisierung
+  
+  - en: Big Data
+    fr: Big Data
+    de: Big Data
+  
+  - en: Natural Language Processing
+    fr: Traitement du langage naturel
+    de: Verarbeitung natürlicher Sprache
+
+# Skills for jobs in Software Engineering
+software_engineering:
+
+  - en: Web Frameworks
+    fr: Frameworks Web
+    de: Web Frameworks
+  
+  - en: Front-End
+    fr: Front-End
+    de: Front-End
+  
+  - en: Back-End
+    fr: Back-End
+    de: Back-End
+
+  - en: MVC Architecture
+    fr: Architecture MVC
+    de: MVC-Architektur
+
+  - en: Database Management
+    fr: Gestion de bases de données
+    de: DB-Management
+  
+  - en: Continuous Development
+    fr: Développement continu
+    de: Kontinuierliche Entwicklung

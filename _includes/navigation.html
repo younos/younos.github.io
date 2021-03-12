@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{ '/' | relative_url }}">
+    <img src={{ '/assets/images/favicon.png' | relative_url }} width="30" height="30" class="d-inline-block align-top" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      {% for item in site.data.navigation %}
+        {% if item.name == "CV" %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ item.name }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            {% for cv in site.cv %}
+              <a class="dropdown-item" href="{{ cv.url | relative_url }}">{{ cv.title}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        {% else %}
+          <li class="nav-item{% if page.url == item.link %}'current'{% endif %}">
+            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <div id="darkMode" class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li><a href="#" class="btn btn-primary switch">Dark Mode</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

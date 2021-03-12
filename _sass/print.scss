@@ -1,0 +1,60 @@
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
+@import "./bootstrap/mixins";
+@import "./bootstrap/grid";
+
+
+//////////////////////////////////////////////////////////
+// RULES //
+//////////////////////////////////////////////////////////
+
+* {
+    // To enable Background Graphics
+    -webkit-print-color-adjust: exact !important; // Chrome, Safari
+    color-adjust: exact !important;  // Firefox
+}
+
+@page {
+    size: A4; // ISO/JIS A4 (210mm×297mm)
+    margin: 0; // To remove headers & footers
+}
+
+html, body {
+    background-color: $white;
+}
+
+#btn-toolbar {
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 99.8%; // Because of container class constraint
+}
+
+#primary-section {
+    @extend .col-8;
+    padding-bottom: 0 !important;
+}
+
+#secondary-section {
+    @extend .col-4;
+    padding-bottom: 0 !important;
+}
+
+.level-description {
+    @extend .col-5;
+}
+
+.level-container {
+    @extend .col-7;
+}
+
+div.page-breaker {
+    page-break-before: always;
+    height:1px;
+    margin-bottom: 30px;
+}

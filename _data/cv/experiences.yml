@@ -1,0 +1,144 @@
+# Add your experiences from oldest to newest
+
+# Experience 1 (oldest)
+- company: IT-Burri
+  link: https://www.it-burri.ch/
+  period: 04.2014-04.2017
+  location:
+    en: "Cernier, Switzerland"
+    fr: "Cernier, Suisse"
+    de: "Cernier, Schweiz"
+  title:
+    en: IT Management Specialist (40%)
+    fr: Informaticien de Gestion (40%)
+    de: IT-Management-Spezialist (40%)
+  tasks:
+      - title:
+          en: ERP consulting and integration (Odoo)
+          fr: Conseil et mise en place d'ERP (Odoo)
+          de: ERP-Beratung und -Integration (Odoo)
+        subtasks:
+          - en: Business needs analysis and planning of development activities
+            fr: Analyse des besoins de l'entreprise et planification des activités de développement
+            de: Analyse von Geschäftsanforderungen und Planung von Entwicklungsaktivitäten
+          - en: Software development (Python, XML, Javascript) and deployment on Linux
+            fr: Développement logiciel (Python, XML, Javascript) et déploiement du système sur Linux
+            de: Softwareentwicklung (Python, XML, Javascript) und Systembereitstellung unter Linux
+          - en: Customer support and training
+            fr: Support clients et formations
+            de: Kundensupport und Schulungen
+      - title:
+          en: IT support and devices installation/configuration
+          fr: Support informatique et installation/configuration de matériel
+          de: IT-Support und Installation/Konfiguration von Geräten
+        subtasks:
+          - en: Servers and desktops (Linux & Windows)
+            fr: Serveurs et ordinateurs de bureau (Linux & Windows)
+            de: Servers und Desktops (Linux & Windows)
+          - en: Routers, firewalls and switches
+            fr: Routeurs, pare-feux et switches
+            de: Routers, Firewalls und Switches
+
+# Experience 2
+- company: Freelance
+  link:
+  period: 12.2017-02.2017
+  location:
+    en: "Neuchâtel, Switzerland"
+    fr: "Neuchâtel, Suisse"
+    de: "Neuenburg, Schweiz"
+  title:
+    en: ERP Consultant (40%)
+    fr: Consultant ERP (40%)
+    de: ERP-Berater (40%)
+  tasks:
+    - title:
+        en: ERP consulting for a company in the field of technical writing for the industry
+        fr: Expertise-conseil en ERP pour une entreprise dans le domaine de la rédaction technique pour l'industrie
+        de: ERP-Beratung für ein Unternehmen im Bereich der technischen Redaktion für die Industrie
+      subtasks:
+        - en: Business needs analysis
+          fr: Analyse des besoins de l'entreprise
+          de: Analyse der Geschäftsanforderungen
+        - en: Training on ERP (Odoo) use and development
+          fr: Formation sur l'utilisation et le développement de l'ERP (Odoo)
+          de: Schulung zur Nutzung und Entwicklung von ERP (Odoo)
+        - en: Support for development and troubleshooting
+          fr: Support pour le développement et dépannages
+          de: Entwicklungssupport und Fehlerbehebung
+
+# Experience 3
+- company: Airbus Operations GmbH
+  link: https://www.airbus.com/company/worldwide-presence/germany.html
+  period: 06.2018-06.2020
+  location:
+    en: "Hamburg, Germany"
+    fr: "Hambourg, Allemagne"
+    de: "Hamburg, Deutschland"
+  title:
+    en: Data Scientist
+    fr: Data Scientist
+    de: Datenwissenschaftler
+  tasks:
+    - title:
+        en: Predictive maintenance model development for aircraft systems
+        fr: Développement de modèles de maintenance prédictive pour systèmes aéronautiques
+        de: Entwicklung von vorausschauenden Wartungsmodellen für Flugzeugsysteme
+      subtasks:
+        - en: Aircraft system survey and data exploration for feasibility study
+          fr: Étude du système aéronautique et exploration des données pour l'étude de faisabilité
+          de: Untersuchung des Flugzeugsystems und Datenexploration für die Machbarkeitsstudie
+        - en: Predictive model development using big data tools and statistical & ML/DL methods
+          fr: Développement de modèles prédictifs à l'aide d'outils de Big Data et de méthodes statistiques & ML/DL
+          de: Entwicklung von Vorhersagemodellen mit Big-Data-Tools und statistischen & ML/DL-Methoden
+        - en: Model validation by crossing predictions with history of maintenance events
+          fr: Validation des modèles en croisant les prédictions avec l'historique des événements de maintenance
+          de: Modellvalidierung durch Kreuzung der Vorhersagen mit der Wartungshistorie
+        - en: Transformation of data into relevant charts
+          fr: Transformation de données en graphes pertinents
+          de: Umwandlung von Daten in relevante Charts
+        - en: Communication of results to stakeholders (system engineers, experts, airlines)
+          fr: Communication des résultats aux parties prenantes (ingénieurs système, experts, compagnies aériennes)
+          de: Kommunikation der Ergebnisse an die Beteiligten (Systemingenieure, Experten, Fluggesellschaften)
+    - title:
+        en: Design office support for root-cause analysis on in-service issues
+        fr: Soutien du département de design pour l'analyse des causes principales des problèmes en service
+        de: Unterstützung des Designbüros bei der Ursachenanalyse von Problemen im Betrieb
+      subtasks:
+        - en: Aircraft system survey and data exploration
+          fr: Étude du système aéronautique et exploration des données
+          de: Untersuchung des Flugzeugsystems und Datenexploration
+        - en: Problems identification and classification
+          fr: Identification et classification des problèmes
+          de: Probleme Identifizierung und Klassifizierung
+        - en: Findings report preparation
+          fr: Préparation du rapport de conclusions
+          de: Erstellung des Befundberichts
+
+# Experience 4
+- company: AKKA Germany GmbH
+  link: https://www.akka-technologies.com/germany/
+  period: 09.2020-12.2020
+  location:
+    en: "Bremen, Germany"
+    fr: "Brême, Allemagne"
+    de: "Bremen, Deutschland"
+  title:
+    en: Java Software Engineer
+    fr: Ingénieur Logiciel
+    de: Softwareingenieur
+  tasks:
+    - title:
+        en: Development of a GUI for a radar program on Eurofighters
+        fr: Développement d'une GUI pour un programme de radar sur les Eurofighters
+        de: Entwicklung einer GUI für ein Radarprogramm auf Eurofighters
+      subtasks:
+        - en: GUI development (JavaFX) using MVC architecture
+          fr: Développement de l'interface (JavaFX) en utilisant l'architecture MVC
+          de: GUI-Entwicklung (JavaFX) mit MVC-Architektur
+        - en: Adaptation of the back-end according to the specifications of the front-end
+          fr: Adaptation du back-end en fonction des spécifications du front-end
+          de: Anpassung des Back-Ends an die Vorgaben des Frontends
+        - en: Scrum-based organization (daily reports of on-going activities, blocking points, etc.)
+          fr: Organisation Scrum (rapports quotidiens des activités en cours, points de blocage, etc.)
+          de: Scrum Organisation (tägliche Berichte über laufende Aktivitäten, Blockierungspunkte usw.)

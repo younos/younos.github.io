@@ -1,0 +1,148 @@
+# Project 1 (oldest)
+- school:
+    en: University of Fribourg
+    fr: Université de Fribourg
+    de: Universität Freiburg
+  period: 02.2014-06.2014
+  title:
+    en: Applied Signal Processing
+    fr: Traitement appliqué des signaux
+    de: Angewandte Signalverarbeitung
+  types:
+    - data_science
+  description:
+    en: Handwritten Recognition Problem
+    fr: Problème de reconnaissance de l'écriture manuscrite
+    de: Handschriftliches Erkennungsproblem
+  tools:
+    - Java
+    - Weka
+    - Eclipse
+
+# Project 2
+- school:
+    en: University of Neuchâtel
+    fr: Université de Neuchâtel
+    de: Universität Neuenburg
+  period: 09.2014-12.2014
+  title:
+    en: Seminar "Natural Language Processing"
+    fr: Séminaire "Traitement du langage naturel"
+    de: Seminar "Natural Language Processing"
+  types:
+    - data_science
+  description:
+    en: Authorship Attribution of the Disputed Federalist Papers using Relative Entropy
+    fr: Attribution de la paternité des Papiers fédéralistes en utilisant l'entropie relative
+    de: Zuweisung der Vaterschaft der Federalist Papers mittels relativer Entropie
+  tools:
+    - Python (NLTK, BeautifulSoup, scipy, pandas, numpy)
+    - PyCharm
+    - LaTeX
+
+# Project 3
+- school:
+    en: University of Fribourg
+    fr: Université de Fribourg
+    de: Universität Freiburg
+  period: 02.2015-06.2015
+  title:
+    en: Web Engineering
+    fr: Ingénierie du Web
+    de: Webentwicklung
+  types:
+    - software_engineering
+  description:
+    en: "Social & e-Commerce Application: E.FightClub"
+    fr: "Application sociale et de commerce électronique : E.FightClub"
+    de: "Soziale & E-Commerce Applikation: E.FightClub"
+  tools:
+    - Ruby on Rails
+    - Sass
+    - RubyMine
+    - GitHub
+    - Travis CI
+
+# Project 4
+- school:
+    en: University of Neuchâtel
+    fr: Université de Neuchâtel
+    de: Universität Neuenburg
+  period: 02.2015-06.2015
+  title:
+    en: R&D Workshop (Research Project)
+    fr: Workshop R&D (projet de recherche)
+    de: F&E Workshop (Forschungsprojekt)
+  types:
+    - software_engineering
+  description:
+    en: "Lamport's Fast Mutual Exclusion Algorithm: An Empirical Study"
+    fr: "Algorithme d'exclusion mutuelle rapide de Lamport : Une étude empirique"
+    de: "Lamport's Fast Mutual Exclusion Algorithm: Eine empirische Studie"
+  tools:
+    - Java
+    - Eclipse
+    - LaTeX
+
+# Project 5
+- school:
+    en: University of Neuchâtel & IFAAR (Bern)
+    fr: Université de Neuchâtel & IFAAR (Berne)
+    de: Universität Neuenburg & IFAAR (Bern)
+  period: 02.2015-06.2015
+  title:
+    en: R&D Workshop (Practical Project)
+    fr: Workshop R&D (projet pratique)
+    de: F&E Workshop (Praxisprojekt)
+  types:
+    - data_science
+    - software_engineering
+  description:
+    en: IFAAR Social Media - Web Scraper
+    fr: IFAAR Social Media - Web Scraper
+    de: IFAAR Social Media - Web Scraper
+  tools:
+    - Java (Selenium)
+    - Eclipse
+    - LaTeX
+
+# Project 6
+- school:
+    en: University of Neuchâtel
+    fr: Université de Neuchâtel
+    de: Universität Neuenburg
+  period: 09.2015-12.2015
+  title:
+    en: Probabilistic Algorithms
+    fr: Algorithmes probabilistes
+    de: Probabilistische Algorithmen
+  types:
+    - data_science
+  description:
+    en: Comparing Heuristics for TSP
+    fr: Comparaison d'heuristiques pour le TSP
+    de: Vergleich von Heuristiken für TSP
+  tools:
+    - Matlab
+
+# Project 7
+- school:
+    en: University of Neuchâtel
+    fr: Université de Neuchâtel
+    de: Universität Neuenburg
+  period: 12.2015-06.2016
+  title:
+    en: Master Thesis
+    fr: Thèse de Master
+    de: Masterarbeit
+  types:
+    - data_science
+    - software_engineering
+  description:
+    en: "Automatic Analysis of a Large Corpus: Obama's Speeches at the White House"
+    fr: "Analyse automatique d'un grand corpus : Les discours d'Obama à la Maison Blanche"
+    de: "Automatische Analyse eines großen Korpus: Obamas Reden im Weißen Haus"
+  tools:
+    - Python (NLTK, BeautifulSoup, scipy, pandas, numpy)
+    - PyCharm
+    - LaTeX

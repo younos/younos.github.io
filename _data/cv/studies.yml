@@ -1,0 +1,61 @@
+# Add your studies from oldest to newest
+
+# Study 1 (oldest)
+- school:
+    en: University of Neuchâtel
+    fr: Université de Neuchâtel
+    de: Universität Neuenburg
+  link: https://www.unine.ch/unine/home/formation/bachelors/sciences-eco/sciences-economiques.html
+  period: 09.2009-06.2013
+  location:
+    en: "Switzerland"
+    fr: "Suisse"
+    de: "Schweiz"
+  title:
+    en: B.Sc. in Economics and Business
+    fr: B.Sc. en sciences économiques
+    de: B.Sc. in Wirtschaftswissenschaften
+  description:
+    en: "Major: Information Systems"
+    fr: "Orientation: Systèmes d'information"
+    de: "Hauptfach: Wirtschaftsinformatik"
+
+# Study 2
+- school:
+    en: Universities of Bern, Neuchâtel & Fribourg
+    fr: Universités de Berne, Neuchâtel & Fribourg
+    de: Universitäten Bern, Neuenburg & Freiburg
+  link: https://mcs.unibnf.ch/
+  period: 09.2013-06.2016
+  location:
+    en: "Switzerland"
+    fr: "Suisse"
+    de: "Schweiz"
+  title:
+    en: Swiss Joint M.Sc. in Computer Science
+    fr: Swiss Joint M.Sc. en informatique
+    de: Swiss Joint M.Sc. in Informatik
+  description:
+    en: "Major: Advanced Information Processing"
+    fr: "Orientation: Traitement avancé de l'information"
+    de: "Hauptfach: Fortgeschrittene Datenverarbeitung"
+
+# Study 3
+- school:
+    en: ILAC
+    fr: ILAC
+    de: ILAC
+  link: https://www.ilac.com/general-english-adult/
+  period: 05.2017-08.2017
+  location:
+    en: "Toronto, Canada"
+    fr: "Toronto, Canada"
+    de: "Toronto, Kanada"
+  title:
+    en: English Studies
+    fr: Études d'anglais
+    de: Englische Studien
+  description:
+    en: General English, Level 16/17 (Proficiency)
+    fr: Anglais général, Niveau 16/17 (Proficiency)
+    de: Allgemeines Englisch, Stufe 16/17 (Proficiency)

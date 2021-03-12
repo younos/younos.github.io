@@ -1,0 +1,38 @@
+- name:
+    en: Database
+    fr: Base de données
+    de: Datenbank
+  list:
+    - PostgreSQL
+    - MySQL
+    - SQLite
+    - MongoDB
+
+- name:
+    en: VCS
+    fr: VCS
+    de: VCS
+  list:
+    - GitHub
+    - GitLab
+    - BitBucket
+
+- name:
+    en: Project Management
+    fr: Gestion de projet
+    de: Projektmanagement
+  list:
+    - Jira
+    - Confluence
+
+- name:
+    en: IDE
+    fr: EDI
+    de: IDE
+  list:
+    - Eclipse
+    - Jupyter
+    - IntelliJ
+    - Pycharm
+    - RubyMine
+    - Visual Studio Code

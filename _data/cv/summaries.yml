@@ -1,0 +1,21 @@
+# Summary for jobs in Data Science
+data_science:
+  title:
+    en: Data Scientist
+    fr: Data Scientist
+    de: Datenwissenschaftler
+  text:
+    en: Being graduated in computer science with a master's degree mainly focused on advanced information processing, I am keen to work in the Data Science world. During one of my last experiences with Airbus Operations GmbH in Hamburg, I worked as Data Scientist with a focus on predictive maintenance for aircraft systems.
+    fr: Étant diplômé en informatique avec un master principalement axé sur le traitement avancé de l'information, j'aimerais travailler dans le monde de la science des données. Lors de l'une de mes dernières expériences chez Airbus Operations GmbH à Hambourg, j'ai travaillé en tant que Data Scientist en me spécialisant dans la maintenance prédictive des systèmes aéronautiques.
+    de: Als diplomierter Informatiker mit einem Master-Abschluss, der sich hauptsächlich auf fortgeschrittene Informationsverarbeitung konzentriert, bin ich sehr daran interessiert, in der Datenwissenschaft zu arbeiten. Während einer meiner letzten Erfahrungen bei Airbus Operations GmbH in Hamburg arbeitete ich als Datenwissenschaftler mit dem Fokus auf vorausschauende Wartung für Flugzeugsysteme.
+
+# Summary for jobs in Software Engineering
+software_engineering:
+  title:
+    en: Software Engineer
+    fr: Ingénieur Logiciel
+    de: Software-Ingenieur
+  text:
+    en: Being graduated in computer science with a focus on advanced information processing, I have a passion for Data Science and Software Engineering. During one of my last experiences in Bremen, I worked as Software Engineer on a project for Eurofighters (Airbus Defence), developing a GUI in Java for a radar program.
+    fr: Étant diplômé en informatique avec une spécialisation en traitement avancé de l'information, je suis passionné par la science des données et le génie logiciel. Lors de l'une de mes dernières expériences à Brême, j'ai travaillé en tant qu'ingénieur logiciel sur un projet pour Eurofighters (Airbus Defence), développant une interface graphique en Java pour un programme radar.
+    de: Als diplomierter Informatiker mit einem Schwerpunkt auf fortgeschrittener Informationsverarbeitung habe ich eine Leidenschaft für Data Science und Software Engineering. Während einer meiner letzten Erfahrungen in Bremen habe ich als Software-Ingenieur in einem Projekt für Eurofighters (Airbus Defence) gearbeitet und eine GUI in Java für ein Radarprogramm entwickelt.

@@ -1,0 +1,44 @@
+en:
+  summary: Summary
+  experience: Experience
+  education: Education
+  academic_projects: Academic Projects
+  personal_info: About me
+  contact: Contact
+  hard_skills: Hard Skills
+  programming: Programming
+  tools: Tools
+  languages: Languages
+  soft_skills: Soft Skills
+  hobbies: Hobbies
+  references: References
+
+fr:
+  summary: Résumé
+  experience: Expérience
+  education: Études
+  academic_projects: Projets Académiques
+  personal_info: À mon sujet
+  contact: Contact
+  hard_skills: Hard Skills
+  programming: Programmation
+  tools: Outils
+  languages: Langues
+  soft_skills: Soft Skills
+  hobbies: Loisirs
+  references: Références
+
+de:
+  summary: Zusammenfassung
+  experience: Erfahrung
+  education: Ausbildung
+  academic_projects: Akademische Projekte
+  personal_info: Über mich
+  contact: Kontakt
+  hard_skills: Hard Skills
+  programming: Programmierung
+  tools: Werkzeuge
+  languages: Sprachen
+  soft_skills: Soft Skills
+  hobbies: Hobbys
+  references: Referenzen
