@@ -1,0 +1,39 @@
+- name:
+    en: Python
+    fr: Python
+    de: Python
+  libraries:
+    - pyspark
+    - pandas
+    - scikit-learn
+    - tensorFlow
+    - keras
+    - nltk
+    - numpy
+    - scipy
+
+- name:
+    en: Java
+    fr: Java
+    de: Java
+  libraries:
+    - JavaFX
+    - Apache Spark
+    - Lucene
+    - Selenium
+
+- name:
+    en: Web Development
+    fr: Développement Web
+    de: Webentwicklung
+  libraries:
+    - React
+    - RoR
+    - Jekyll
+    - WordPress
+    - HTML
+    - CSS
+    - Sass
+    - Javascript
+    - jQuery
+    - SQL

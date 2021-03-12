@@ -1,0 +1,275 @@
+---
+layout: default
+job_type: data_science
+---
+{% assign summaries = site.data.cv.summaries %}
+
+<!-- Document controls -->
+<div id="btn-toolbar" class="btn-toolbar justify-content-between m-2" role="toolbar" aria-label="Toolbar with button groups">
+  <div id="divSelectJobType" class="input-group">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="selectJobType">Job Type</label>
+    </div>
+    <select class="custom-select w-50" id="selectJobType">
+      {% for summary_hash in summaries %}
+        <option value="{{ summary_hash[0] }}">{{ summary_hash[1].title[page.lang] }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary" onClick="window.print()">Print</button>
+  </div>
+</div>
+
+<section id="cv-container" class="cv container">
+  <div id="row" class="row">
+
+    <!--Primary part of the CV-->
+    <div id="primary-section" class="col-md-8">
+      {% assign tr = site.data.cv.tr[page.lang] %}
+
+      <!-- Title -->
+      {% assign personal_data = site.data.cv.personal %}
+      <h1 class="title">{{ personal_data.firstname | append: " " | append: personal_data.lastname }}</h1>
+
+      <!-- Summary -->
+      <div class="subsection">
+        <p id="summary" class="summary">
+          {{ summaries[layout.job_type].text[page.lang] }}
+        </p>
+      </div>
+
+      <!--Experience-->
+      <div class="subsection">
+        <h2>{{ tr.experience }} :briefcase:</h2>
+        <hr>
+        <div id="experience">
+          {% assign experiences = site.data.cv.experiences | reverse %}
+          {% for experience in experiences %}
+            <h3>{{ experience.title[page.lang] }}</h3>
+            <h5>
+              :spiral_calendar: {{ experience.period }}
+              &nbsp;&nbsp; :office:
+                {% if experience.link %}
+                  <a href="{{ experience.link }}">{{ experience.company }}</a>
+                {% else %}
+                  {{ experience.company }}
+                {% endif %}
+              &nbsp; :round_pushpin: {{ experience.location[page.lang] }}
+            </h5>
+            <ul class="task-list">
+              {% for task in experience.tasks %}
+                <li>
+                  {{ task.title[page.lang] }}
+                  <ol>
+                    {% for subtask in task.subtasks %}
+                      <li>{{ subtask[page.lang] }}</li>
+                    {% endfor %}
+                  </ol>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--Page Breaker-->
+      <div class="page-breaker"></div>
+
+      <!--Education-->
+      <div class="subsection">
+        <h2>{{ tr.education }} :mortar_board:</h2>
+        <hr>
+        <div id="education">
+          {% assign studies = site.data.cv.studies | reverse %}
+          {% for study in studies %}
+            <h3>
+              {% if study.link %}
+                <a href="{{ study.link }}">{{ study.title[page.lang] }}</a>
+              {% else %}
+                {{ study.title[page.lang] }}
+              {% endif %}
+            </h3>
+            <h5>
+              :spiral_calendar: {{ study.period }}
+              &nbsp;&nbsp; :school: {{ study.school[page.lang] }}
+              &nbsp; :round_pushpin: {{ study.location[page.lang] }}
+            </h5>
+            <ul class="task-list">
+                <li>
+                  {{ study.description[page.lang] }}
+                </li>
+            </ul>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--Academic Projects-->
+      <div class="subsection">
+        <h2>{{ tr.academic_projects }} :computer:</h2>
+        <hr>
+        <div id="academic-projects">
+          {% assign academic_projects = site.data.cv.academic_projects | reverse %}
+          {% for project in academic_projects %}
+            {% if project.types contains layout.job_type %}
+              <h3>{{ project.title[page.lang] }}</h3>
+              <h4>{{ project.description[page.lang] }}</h4>
+              <h5>
+                :spiral_calendar: {{ project.period }}
+                &nbsp;&nbsp; :school: {{ project.school[page.lang] }}
+              </h5>
+              <ul class="task-list">
+                  <li>Tools: {{ project.tools | join: ", " }}</li>
+              </ul>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+    <!--Secondary part of the CV-->
+    <div id="secondary-section" class="col-md-4">
+
+      <!--Picture-->
+      <img class="picture" src="/assets/images/cv_picture.jpg" >
+
+      <!--Personal Info-->
+      <div class="subsection">
+        <h2>{{ tr.personal_info }}</h2>
+        <div id="info">
+          <span>:switzerland: {{ personal_data.nationality[page.lang] }}</span><br>
+          <span>:birthday: {{ personal_data.birthdate }}</span><br>
+          <span>:pushpin: {{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}</span>
+        </div>
+      </div>
+
+      <!--Contact-->
+      <div class="subsection">
+        <h2>{{ tr.contact }}</h2>
+        {% assign contact = site.data.cv.contact %}
+        <div id="contact">
+          <span>:telephone_receiver: <a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a></span><br>
+          <span>:e-mail: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span><br>
+          <span>{% include linkedin.html %} <a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a></span>
+        </div>
+      </div>
+
+      <!--Hard Skills-->
+      <div class="subsection">
+        <h2>{{ tr.hard_skills | upcase }}</h2>
+        {% assign hard_skills = site.data.cv.hard_skills %}
+        <div id="hard-skills">
+          {% for skill in hard_skills[layout.job_type] %}
+            <span class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--Programming-->
+      <div class="subsection">
+        <h2>{{ tr.programming | upcase }}</h2>
+        {% assign programming_languages = site.data.cv.programming %}
+        <div id="programming">
+          <ul class="badge-list">
+            {% for language in programming_languages %}
+              <li>
+                {{ language.name[page.lang] }}<br>
+                {% for library in language.libraries %}
+                  <span class="badge rounded-pill bg-warning">{{ library }}</span>
+                {% endfor %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <!--Tools-->
+      <div class="subsection">
+        <h2>{{ tr.tools | upcase }}</h2>
+        {% assign tools_list = site.data.cv.tools %}
+        <div id="tools">
+          <ul class="badge-list">
+            {% for tools in tools_list %}
+              <li>
+                {{ tools.name[page.lang] }}<br>
+                {% for tool in tools.list %}
+                  <span class="badge rounded-pill bg-warning">{{ tool }}</span>
+                {% endfor %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <!--Page Breaker-->
+      <div class="page-breaker"></div>
+
+      <!--Languages-->
+      <div class="subsection">
+        <h2>{{ tr.languages | upcase }}</h2>
+        {% assign languages = site.data.cv.languages %}
+        <div id="languages" class="languages">
+          {% for language in languages %}
+            <div class="row">
+              <div class="col-lg-5 level-description">
+                <span>{{ language.icon }} {{ language.name[page.lang] }}</span>
+              </div>
+              <div class="col-lg-7 level-container">
+                {% for i in (1..5) %}
+                  {% if i <= language.level %}
+                    <div class="level-circle full"></div>
+                  {% else %}
+                    <div class="level-circle empty"></div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>          
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--Soft Skills-->
+      <div class="subsection">
+        <h2>{{ tr.soft_skills | upcase }}</h2>
+        {% assign soft_skills = site.data.cv.soft_skills %}
+        <div id="soft-skills">
+          {% for skill in soft_skills %}
+            <span class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--Hobbies-->
+      <div class="subsection">
+        <h2>{{ tr.hobbies | upcase }}</h2>
+        {% assign hobbies = site.data.cv.hobbies %}
+        <div id="hobbies">
+          {% for hobby in hobbies %}
+            <span class="badge rounded-pill bg-warning">{{ hobby[page.lang] }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!--References-->
+      <div class="subsection">
+        <h2>{{ tr.references | upcase }}</h2>
+        {% assign references = site.data.cv.references %}
+        <div id="references">
+          <ul class="person-list">
+            {% for reference in references %}
+              <li>
+                {{ reference.name }}<br>
+                {{ reference.title }}<br>
+                {{ reference.company }}<br>
+                :e-mail: <a href="mailto:{{ reference.email }}">{{ reference.email }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
