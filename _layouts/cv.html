@@ -213,10 +213,10 @@ job_type: data_science
         <div id="languages" class="languages">
           {% for language in languages %}
             <div class="row">
-              <div class="col-lg-5 level-description">
+              <div class="col-5 col-md-12 col-lg-5 level-description">
                 <span>{{ language.icon }} {{ language.name[page.lang] }}</span>
               </div>
-              <div class="col-lg-7 level-container">
+              <div class="col-7 col-md-12 col-lg-7 level-container">
                 {% for i in (1..5) %}
                   {% if i <= language.level %}
                     <div class="level-circle full"></div>
