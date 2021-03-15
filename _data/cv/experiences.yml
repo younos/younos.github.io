@@ -2,6 +2,7 @@
 
 # Experience 1 (oldest)
 - company: IT-Burri
+  complement:
   link: https://www.it-burri.ch/
   period: 04.2014-04.2017
   location:
@@ -41,6 +42,7 @@
 
 # Experience 2
 - company: Freelance
+  complement:
   link:
   period: 12.2017-02.2018
   location:
@@ -68,7 +70,11 @@
           de: Entwicklungssupport und Fehlerbehebung
 
 # Experience 3
-- company: Airbus Operations GmbH
+- company: Airbus
+  complement:
+    en: on behalf of AKKA
+    fr: pour le compte d'AKKA
+    de: im Auftrag von AKKA
   link: https://www.airbus.com/company/worldwide-presence/germany.html
   period: 04.2018-08.2020
   location:
@@ -116,7 +122,8 @@
           de: Erstellung des Befundberichts
 
 # Experience 4
-- company: AKKA Germany GmbH
+- company: AKKA Technologies
+  complement:
   link: https://www.akka-technologies.com/germany/
   period: 09.2020-12.2020
   location:
