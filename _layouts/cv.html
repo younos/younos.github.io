@@ -47,14 +47,18 @@ job_type: data_science
         <div id="experience">
           {% assign experiences = site.data.cv.experiences | reverse %}
           {% for experience in experiences %}
+            {% assign company = experience.company %}
+            {% if experience.complement %}
+              {% assign company = company | append: " (" | append: experience.complement[page.lang] | append: ")" %}
+            {% endif %}
             <h3>{{ experience.title[page.lang] }}</h3>
             <h5>
               :spiral_calendar: {{ experience.period }}
               &nbsp;&nbsp; :office:
                 {% if experience.link %}
-                  <a href="{{ experience.link }}">{{ experience.company }}</a>
+                  <a href="{{ experience.link }}">{{ company }}</a>
                 {% else %}
-                  {{ experience.company }}
+                  {{ company }}
                 {% endif %}
               &nbsp; :round_pushpin: {{ experience.location[page.lang] }}
             </h5>
