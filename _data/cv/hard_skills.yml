@@ -6,12 +6,12 @@ data_science:
     de: Statistik
 
   - en: Machine Learning
-    fr: Apprentissage machine
-    de: Maschinelles Lernen
+    fr: Machine Learning
+    de: Machine Learning
   
   - en: Deep Learning
-    fr: Apprentissage profond
-    de: Tiefes Lernen
+    fr: Deep Learning
+    de: Deep Learning
 
   - en: Predictive Modelling
     fr: Modélisation prédictive
