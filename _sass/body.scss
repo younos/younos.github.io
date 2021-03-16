@@ -29,6 +29,8 @@ $font-family-base: $font-family-sans-serif;
 // RULES //
 //////////////////////////////////////////////////////////
 
+// Button Bar
+
 #divSelectJobType, #darkMode {
     visibility: hidden;
 }
@@ -41,22 +43,34 @@ $font-family-base: $font-family-sans-serif;
     }
 }
 
-span {
-    white-space: nowrap;
-}
-
-ul {
-    padding-left: 18px;
-}
+// Emoji rules
 
 .emoji {
     height: 25px;
     width: 25px;
-    margin: -4px 0 0 0;
-    &[title=":round_pushpin:"] {
-        margin-right: -7px;
+    h2 > & {
+        float: right;
+        height: 35px;
+        width: 35px;
+        margin-top: 7px;
+    }
+    h5 > & {
+        height: 20px;
+        width: 20px;
+        margin-top: -4px;
+        &[title=":round_pushpin:"] {
+            margin-right: -5px;
+        }
     }
 }
+
+// Editable elements rule
+
+.editable[contenteditable="true"] {
+    border: solid 1px $black;
+}
+
+// Main containers rules
 
 .container {
     background-color: $white;
@@ -79,6 +93,8 @@ ul {
     background-color: theme-color("success");
 }
 
+// CV title rule
+
 h1.title {
     font-size: 57px;
     font-weight: lighter;
@@ -87,51 +103,42 @@ h1.title {
     margin-bottom: 50px; 
 }
 
+// CV subsection rule
+
 div.subsection {
-
     margin: 40px 0 40px 0;
-
     p.summary {
         font-size: 14px;
         font-weight: lighter;
         text-align: justify;
     }
-
     h2 {
         font-size: 36px;
         text-transform: uppercase;
         #secondary-section & {
             font-size: 29px;
         }
-        .emoji {
-            float: right;
-            height: 35px;
-            width: 35px;
-            margin: 4px 0 0 0;
-        }
     }
-    
     hr {
         margin: 10px 0 20px 0;
         height: 1px;
         background-color: theme-color("success");
     }
-    
     h3 {
         font-size: 30px;
         font-weight: lighter;
     }
-    
     h4 {
         font-size: 20px;
         font-weight: lighter;
     }
-
     h5 {
         font-size: 15px;
         font-weight: lighter;
     }
 }
+
+// CV subsection's elements rules
 
 img.picture {
     @extend .img-fluid;
@@ -144,30 +151,58 @@ img.picture {
 }
 
 ul.task-list {
-    font-size: 14px;
-    li > ol {
-        font-size: 13px;
+    padding-left: 18px;
+    > li {
+        > p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        > ol {
+            font-size: 13px;
+        }
     }
 }
 
-ul.badge-list {
+ul.no-bullet {
     list-style: none;
-    padding-left: 5px;
-    li {
-        margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+ul.badge-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5px;
+    > li {
+        margin: 3px 2px 3px 2px;
+    }
+}
+
+ul.language-list {
+    > li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        > .level-description, .level-circle-container {
+            display: inline-flex;
+            flex-wrap: nowrap;
+            flex: 1;
+        }
     }
 }
 
 ul.person-list {
-    list-style: circle;
+    list-style: none;
+    padding-left: 20px;
     li {
         margin-bottom: 10px;
     }
-}
-
-.level-container {
-    display: flex;
-    flex-wrap: nowrap;
+    li::before {
+        content: "\29BF";
+        color: theme-color("warning");
+        display: inline-block; 
+        width: 16px;
+        margin-left: -20px;
+    }
 }
 
 .level-circle {

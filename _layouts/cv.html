@@ -73,7 +73,7 @@ job_type: data_science
             <ul class="task-list editable">
               {% for task in experience.tasks %}
                 <li>
-                  {{ task.title[page.lang] }}
+                  <p>{{ task.title[page.lang] }}</p>
                   <ol>
                     {% for subtask in task.subtasks %}
                       <li>{{ subtask[page.lang] }}</li>
@@ -109,9 +109,7 @@ job_type: data_science
               &nbsp; :round_pushpin: {{ study.location[page.lang] }}
             </h5>
             <ul class="task-list editable">
-                <li>
-                  {{ study.description[page.lang] }}
-                </li>
+              <li>{{ study.description[page.lang] }}</li>
             </ul>
           {% endfor %}
         </div>
@@ -132,7 +130,7 @@ job_type: data_science
                 &nbsp;&nbsp; :school: {{ project.school[page.lang] }}
               </h5>
               <ul class="task-list editable">
-                  <li>Tools: {{ project.tools | join: ", " }}</li>
+                <li>Tools: {{ project.tools | join: ", " }}</li>
               </ul>
             {% endif %}
           {% endfor %}
@@ -147,36 +145,36 @@ job_type: data_science
       <!-- Picture -->
       <img class="picture" src="/assets/images/cv_picture.jpg" >
 
-      <!-- Personal Info -->
+      <!-- About -->
       <div class="subsection">
-        <h2>{{ tr.personal_info }}</h2>
-        <div id="info" class="editable">
-          <span>:switzerland: {{ personal_data.nationality[page.lang] }}</span><br>
-          <span>:birthday: {{ personal_data.birthdate }}</span><br>
-          <span>:pushpin: {{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}</span>
-        </div>
+        <h2>{{ tr.about }}</h2>
+        <ul id="about" class="no-bullet editable">
+          <li>:switzerland:&nbsp;{{ personal_data.nationality[page.lang] }}</li>
+          <li>:birthday:&nbsp;{{ personal_data.birthdate }}</li>
+          <li>:pushpin:&nbsp;{{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}</li>
+        </ul>
       </div>
 
       <!-- Contact -->
       <div class="subsection">
         <h2>{{ tr.contact }}</h2>
         {% assign contact = site.data.cv.contact %}
-        <div id="contact" class="editable">
-          <span>:telephone_receiver: <a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a></span><br>
-          <span>:e-mail: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></span><br>
-          <span>{% include linkedin.html %} <a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a></span>
-        </div>
+        <ul id="contact" class="no-bullet editable">
+          <li>:telephone_receiver:&nbsp;<a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a></li>
+          <li>:e-mail:&nbsp;<a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
+          <li>{% include linkedin.html %}&nbsp;<a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a></li>
+          </ul>
       </div>
 
       <!-- Hard Skills -->
       <div class="subsection">
         <h2>{{ tr.hard_skills | upcase }}</h2>
         {% assign hard_skills = site.data.cv.hard_skills %}
-        <div id="hard-skills" class="editable">
+        <ul id="hard-skills" class="no-bullet badge-list editable">
           {% for skill in hard_skills[layout.job_type] %}
-            <span class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</span>
+            <li class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
 
       <!-- Programming -->
@@ -184,16 +182,14 @@ job_type: data_science
         <h2>{{ tr.programming | upcase }}</h2>
         {% assign programming_languages = site.data.cv.programming %}
         <div id="programming" class="editable">
-          <ul class="badge-list">
-            {% for language in programming_languages %}
-              <li>
-                {{ language.name[page.lang] }}<br>
-                {% for library in language.libraries %}
-                  <span class="badge rounded-pill bg-warning">{{ library }}</span>
-                {% endfor %}
-              </li>
-            {% endfor %}
-          </ul>
+          {% for language in programming_languages %}
+            <div>{{ language.name[page.lang] }}</div>
+            <ul class="no-bullet badge-list">
+              {% for library in language.libraries %}
+                <li class="badge rounded-pill bg-warning">{{ library }}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
         </div>
       </div>
 
@@ -202,16 +198,14 @@ job_type: data_science
         <h2>{{ tr.tools | upcase }}</h2>
         {% assign tools_list = site.data.cv.tools %}
         <div id="tools" class="editable">
-          <ul class="badge-list">
-            {% for tools in tools_list %}
-              <li>
-                {{ tools.name[page.lang] }}<br>
-                {% for tool in tools.list %}
-                  <span class="badge rounded-pill bg-warning">{{ tool }}</span>
-                {% endfor %}
-              </li>
-            {% endfor %}
-          </ul>
+          {% for tools in tools_list %}
+            <div>{{ tools.name[page.lang] }}</div>
+            <ul class="no-bullet badge-list">
+              {% for tool in tools.list %}
+                <li class="badge rounded-pill bg-warning">{{ tool }}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
         </div>
       </div>
 
@@ -222,46 +216,46 @@ job_type: data_science
       <div class="subsection">
         <h2>{{ tr.languages | upcase }}</h2>
         {% assign languages = site.data.cv.languages %}
-        <div id="languages" class="languages editable">
+        <ul id="languages" class="no-bullet language-list editable">
           {% for language in languages %}
-            <div class="row">
-              <div class="col-5 col-md-12 col-lg-5 level-description">
-                <span>{{ language.icon }} {{ language.name[page.lang] }}</span>
-              </div>
-              <div class="col-7 col-md-12 col-lg-7 level-container">
+            <li>
+              <span class="level-description">
+                {{ language.icon }}&nbsp;{{ language.name[page.lang] }}
+              </span>
+              <div class="level-circle-container">
                 {% for i in (1..5) %}
                   {% if i <= language.level %}
-                    <div class="level-circle full"></div>
+                    <div class="level-circle full">&nbsp;</div>
                   {% else %}
-                    <div class="level-circle empty"></div>
+                    <div class="level-circle empty">&nbsp;</div>
                   {% endif %}
                 {% endfor %}
               </div>
-            </div>          
+            </li>          
           {% endfor %}
-        </div>
+        </ul>
       </div>
 
       <!-- Soft Skills -->
       <div class="subsection">
         <h2>{{ tr.soft_skills | upcase }}</h2>
         {% assign soft_skills = site.data.cv.soft_skills %}
-        <div id="soft-skills" class="editable">
+        <ul id="soft-skills" class="no-bullet badge-list editable">
           {% for skill in soft_skills %}
-            <span class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</span>
+            <li class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
 
       <!-- Hobbies -->
       <div class="subsection">
         <h2>{{ tr.hobbies | upcase }}</h2>
         {% assign hobbies = site.data.cv.hobbies %}
-        <div id="hobbies" class="editable">
+        <ul id="hobbies" class="no-bullet badge-list editable">
           {% for hobby in hobbies %}
-            <span class="badge rounded-pill bg-warning">{{ hobby[page.lang] }}</span>
+            <li class="badge rounded-pill bg-warning">{{ hobby[page.lang] }}</li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
 
       <!-- References -->

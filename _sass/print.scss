@@ -46,14 +46,6 @@ a {
     //height: 200vh; // On Chrome, helps to fill colored band to the second page
 }
 
-.level-description {
-    @extend .col-5;
-}
-
-.level-container {
-    @extend .col-7;
-}
-
 div.page-breaker {
     page-break-before: always;
     height:1px;
