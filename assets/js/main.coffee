@@ -16,15 +16,12 @@ $(document).ready ->
         updateHardSkills selectedJobType
         updateProjects selectedJobType
         return
-    
+
+    # If click on edit/finish button, set content editable/not editable
     $('input[id=start-stop-edit]').change ->
-        checked = $(this).is(':checked')
-        label = $(this).parent().children('span')
-        if (checked)
-            label.text('Finish')
-            setContentEditable(true)
+        if ($(this).is(':checked'))
+            setContentEditable(true, "Finish")
         else 
-            label.text('Edit')
             setContentEditable(false)
         return 
 
@@ -82,9 +79,12 @@ updateProjects = (jobType) ->
     return
 
 ###
+Change edit button text and enable/disable print button.
 Find all tag with class .editable and change the attribute 'contenteditable' to value.
 ###
-setContentEditable = (value) ->
+setContentEditable = (value, text="Edit") ->
+    $('input[id=start-stop-edit]').parent().children('span').text(text)
+    $("#print").prop('disabled', value)
     $('#cv-container').find('.editable').each ->
         $(this).prop('contenteditable', value);
         return
