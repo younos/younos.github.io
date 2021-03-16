@@ -43,6 +43,7 @@ a {
 #secondary-section {
     @extend .col-4;
     padding-bottom: 0 !important;
+    //height: 200vh; // On Chrome, helps to fill colored band to the second page
 }
 
 .level-description {
@@ -57,4 +58,8 @@ div.page-breaker {
     page-break-before: always;
     height:1px;
     margin-bottom: 30px;
+}
+
+.badge {
+    border: none;
 }
