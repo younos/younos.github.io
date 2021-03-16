@@ -3,7 +3,7 @@ en:
   experience: Experience
   education: Education
   academic_projects: Academic Projects
-  personal_info: About me
+  about: About me
   contact: Contact
   hard_skills: Hard Skills
   programming: Programming
@@ -18,7 +18,7 @@ fr:
   experience: Expérience
   education: Études
   academic_projects: Projets Académiques
-  personal_info: À mon sujet
+  about: À mon sujet
   contact: Contact
   hard_skills: Hard Skills
   programming: Programmation
@@ -33,7 +33,7 @@ de:
   experience: Erfahrung
   education: Ausbildung
   academic_projects: Akademische Projekte
-  personal_info: Über mich
+  about: Über mich
   contact: Kontakt
   hard_skills: Hard Skills
   programming: Programmierung
