@@ -20,7 +20,7 @@ $(document).ready ->
     # If click on edit/finish button, set content editable/not editable
     $('input[id=start-stop-edit]').change ->
         if ($(this).is(':checked'))
-            setContentEditable(true, "Finish")
+            setContentEditable(true, 'Finish')
         else 
             setContentEditable(false)
         return 
@@ -81,11 +81,26 @@ updateProjects = (jobType) ->
 ###
 Change edit button text and enable/disable print button.
 Find all tag with class .editable and change the attribute 'contenteditable' to value.
+Toggle 'filled' attribute of .level-circle divs.
 ###
-setContentEditable = (value, text="Edit") ->
+setContentEditable = (value, text='Edit') ->
     $('input[id=start-stop-edit]').parent().children('span').text(text)
-    $("#print").prop('disabled', value)
+    $('#print').prop('disabled', value)
     $('#cv-container').find('.editable').each ->
-        $(this).prop('contenteditable', value);
+        $(this).prop('contenteditable', value)
         return
+    $('#languages').find('.level-circle').each ->
+        if value
+            $(this).on('click', toggleFilledAttribute)
+        else
+            $(this).off('click', toggleFilledAttribute)
+        return
+    return
+
+###
+Toggle "filled" attribute.
+###
+toggleFilledAttribute = () ->
+    filled = $(this).attr('filled') == 'true'
+    $(this).attr('filled', !filled);
     return

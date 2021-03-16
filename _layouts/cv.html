@@ -225,9 +225,9 @@ job_type: data_science
               <div class="level-circle-container">
                 {% for i in (1..5) %}
                   {% if i <= language.level %}
-                    <div class="level-circle full">&nbsp;</div>
+                    <div class="level-circle" filled="true"></div>
                   {% else %}
-                    <div class="level-circle empty">&nbsp;</div>
+                    <div class="level-circle" filled="false"></div>
                   {% endif %}
                 {% endfor %}
               </div>
