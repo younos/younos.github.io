@@ -16,6 +16,17 @@ $(document).ready ->
         updateHardSkills selectedJobType
         updateProjects selectedJobType
         return
+    
+    $('input[id=start-stop-edit]').change ->
+        checked = $(this).is(':checked')
+        label = $(this).parent().children('span')
+        if (checked)
+            label.text('Finish')
+            setContentEditable(true)
+        else 
+            label.text('Edit')
+            setContentEditable(false)
+        return 
 
     return
 
@@ -68,4 +79,13 @@ updateProjects = (jobType) ->
                    </ul>
                    """
             $('#academic-projects').append(html)
+    return
+
+###
+Find all tag with class .editable and change the attribute 'contenteditable' to value.
+###
+setContentEditable = (value) ->
+    $('#cv-container').find('.editable').each ->
+        $(this).prop('contenteditable', value);
+        return
     return
