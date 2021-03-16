@@ -33,6 +33,14 @@ $font-family-base: $font-family-sans-serif;
     visibility: hidden;
 }
 
+.btn-secondary {
+    &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
+        background-color: #adf1b4 !important;
+        border-color: #687f88 !important;
+        color: theme-color("dark") !important;
+    }
+}
+
 span {
     white-space: nowrap;
 }
