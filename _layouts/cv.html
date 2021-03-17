@@ -124,7 +124,7 @@ job_type: data_science
           {% for project in academic_projects %}
             {% if project.types contains layout.job_type %}
               <h3 class="editable">{{ project.title[page.lang] }}</h3>
-              <h4 class="">{{ project.description[page.lang] }}</h4>
+              <h4 class="editable">{{ project.description[page.lang] }}</h4>
               <h5 class="editable">
                 :spiral_calendar: {{ project.period }}
                 &nbsp;&nbsp; :school: {{ project.school[page.lang] }}
@@ -172,7 +172,7 @@ job_type: data_science
         {% assign hard_skills = site.data.cv.hard_skills %}
         <ul id="hard-skills" class="no-bullet badge-list editable">
           {% for skill in hard_skills[layout.job_type] %}
-            <li class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</li>
+            <li>{{ skill[page.lang] }}</li>
           {% endfor %}
         </ul>
       </div>
@@ -186,7 +186,7 @@ job_type: data_science
             <div>{{ language.name[page.lang] }}</div>
             <ul class="no-bullet badge-list">
               {% for library in language.libraries %}
-                <li class="badge rounded-pill bg-warning">{{ library }}</li>
+                <li>{{ library }}</li>
               {% endfor %}
             </ul>
           {% endfor %}
@@ -202,7 +202,7 @@ job_type: data_science
             <div>{{ tools.name[page.lang] }}</div>
             <ul class="no-bullet badge-list">
               {% for tool in tools.list %}
-                <li class="badge rounded-pill bg-warning">{{ tool }}</li>
+                <li>{{ tool }}</li>
               {% endfor %}
             </ul>
           {% endfor %}
@@ -242,7 +242,7 @@ job_type: data_science
         {% assign soft_skills = site.data.cv.soft_skills %}
         <ul id="soft-skills" class="no-bullet badge-list editable">
           {% for skill in soft_skills %}
-            <li class="badge rounded-pill bg-warning">{{ skill[page.lang] }}</li>
+            <li>{{ skill[page.lang] }}</li>
           {% endfor %}
         </ul>
       </div>
@@ -253,7 +253,7 @@ job_type: data_science
         {% assign hobbies = site.data.cv.hobbies %}
         <ul id="hobbies" class="no-bullet badge-list editable">
           {% for hobby in hobbies %}
-            <li class="badge rounded-pill bg-warning">{{ hobby[page.lang] }}</li>
+            <li>{{ hobby[page.lang] }}</li>
           {% endfor %}
         </ul>
       </div>
