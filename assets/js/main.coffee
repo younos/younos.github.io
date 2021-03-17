@@ -4,7 +4,7 @@
 # Load data
 lang = document.currentScript.getAttribute('lang')
 summaries = {{ site.data.cv.summaries | jsonify }}
-academic_projects = {{ site.data.cv.academic_projects | jsonify }}
+academic_projects = {{ site.data.cv.academic_projects | reverse | jsonify }}
 hard_skills = {{ site.data.cv.hard_skills | jsonify }}
 
 $(document).ready ->
@@ -41,17 +41,11 @@ Update the "Hard Skills" subsection based on the job type.
 Select the relevant skills for the selected job type.
 ###
 updateHardSkills = (jobType) ->
-    # Remove all skills
+    # Remove all skills in list
     $('#hard-skills').empty()
     # Add the skills
     for skill in hard_skills[jobType]
-        html = """
-               <span class="badge rounded-pill bg-warning">
-                 #{skill[lang]}
-               </span>
-               &nbsp;
-               """
-        $('#hard-skills').append(html)
+        $('#hard-skills').append("<li>#{skill[lang]}</span>")
     return
 
 ###
@@ -65,13 +59,13 @@ updateProjects = (jobType) ->
     # Remove all projects
     $('#academic-projects').empty()
     # Loop over projects for selected jobType and add them to the div
-    for project in academic_projects.reverse()
+    for project in academic_projects
         if jobType in project.types
             html = """
-                   <h3>#{project.title[lang]}</h3>
-                   <h4>#{project.description[lang]}</h4>
-                   <h5>#{spiral_calendar} #{project.period}&nbsp;&nbsp;&nbsp;#{school} #{project.school[lang]}</h5>
-                   <ul class="task-list">
+                   <h3 class="editable">#{project.title[lang]}</h3>
+                   <h4 class="editable">#{project.description[lang]}</h4>
+                   <h5 class="editable">#{spiral_calendar} #{project.period}&nbsp;&nbsp;&nbsp;#{school} #{project.school[lang]}</h5>
+                   <ul class="task-list editable">
                      <li>Tools: #{project.tools.join(", ")}</li>
                    </ul>
                    """

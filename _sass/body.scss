@@ -173,6 +173,8 @@ ul.badge-list {
     flex-flow: row wrap;
     margin-bottom: 5px;
     > li {
+        @extend .badge;
+        background-color: theme-color("warning");
         margin: 3px 2px 3px 2px;
     }
 }
