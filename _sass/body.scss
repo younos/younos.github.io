@@ -49,17 +49,18 @@ $font-family-base: $font-family-sans-serif;
     height: 25px;
     width: 25px;
     h2 > & {
-        float: right;
         height: 35px;
         width: 35px;
         margin-top: 7px;
     }
-    h5 > & {
+    h5 > div > & {
         height: 20px;
         width: 20px;
         margin-top: -4px;
+        margin-right: 2px;
         &[title=":round_pushpin:"] {
-            margin-right: -5px;
+            margin-left: -5px;
+            margin-right: -1px;
         }
     }
 }
@@ -113,6 +114,9 @@ div.subsection {
         text-align: justify;
     }
     h2 {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
         font-size: 36px;
         text-transform: uppercase;
         #secondary-section & {
@@ -133,8 +137,14 @@ div.subsection {
         font-weight: lighter;
     }
     h5 {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 15px;
         font-weight: lighter;
+        > div {
+            white-space: nowrap;
+            margin-right: 15px;
+        }
     }
 }
 
@@ -166,6 +176,10 @@ ul.task-list {
 ul.no-bullet {
     list-style: none;
     padding-left: 0px;
+}
+
+ul.no-wrap > li {
+    white-space: nowrap;
 }
 
 ul.badge-list {
