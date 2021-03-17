@@ -60,15 +60,16 @@ job_type: data_science
               {% assign company = company | append: " (" | append: experience.complement[page.lang] | append: ")" %}
             {% endif %}
             <h3 class="editable">{{ experience.title[page.lang] }}</h3>
-            <h5 class="editable">
-              :spiral_calendar: {{ experience.period }}
-              &nbsp;&nbsp; :office:
+            <h5>
+              <div class="editable">:spiral_calendar: {{ experience.period }}</div>
+              <div class="editable">:office:
                 {% if experience.link %}
                   <a href="{{ experience.link }}">{{ company }}</a>
                 {% else %}
                   {{ company }}
                 {% endif %}
-              &nbsp; :round_pushpin: {{ experience.location[page.lang] }}
+              </div>
+              <div class="editable">:round_pushpin: {{ experience.location[page.lang] }}</div>
             </h5>
             <ul class="task-list editable">
               {% for task in experience.tasks %}
@@ -103,10 +104,10 @@ job_type: data_science
                 {{ study.title[page.lang] }}
               {% endif %}
             </h3>
-            <h5 class="editable">
-              :spiral_calendar: {{ study.period }}
-              &nbsp;&nbsp; :school: {{ study.school[page.lang] }}
-              &nbsp; :round_pushpin: {{ study.location[page.lang] }}
+            <h5>
+              <div class="editable">:spiral_calendar: {{ study.period }}</div>
+              <div class="editable">:school: {{ study.school[page.lang] }}</div>
+              <div class="editable">:round_pushpin: {{ study.location[page.lang] }}</div>
             </h5>
             <ul class="task-list editable">
               <li>{{ study.description[page.lang] }}</li>
@@ -125,9 +126,9 @@ job_type: data_science
             {% if project.types contains layout.job_type %}
               <h3 class="editable">{{ project.title[page.lang] }}</h3>
               <h4 class="editable">{{ project.description[page.lang] }}</h4>
-              <h5 class="editable">
-                :spiral_calendar: {{ project.period }}
-                &nbsp;&nbsp; :school: {{ project.school[page.lang] }}
+              <h5>
+                <div class="editable">:spiral_calendar: {{ project.period }}</div>
+                <div class="editable">:school: {{ project.school[page.lang] }}</div>
               </h5>
               <ul class="task-list editable">
                 <li>Tools: {{ project.tools | join: ", " }}</li>
@@ -148,7 +149,7 @@ job_type: data_science
       <!-- About -->
       <div class="subsection">
         <h2>{{ tr.about }}</h2>
-        <ul id="about" class="no-bullet editable">
+        <ul id="about" class="no-bullet no-wrap editable">
           <li>:switzerland:&nbsp;{{ personal_data.nationality[page.lang] }}</li>
           <li>:birthday:&nbsp;{{ personal_data.birthdate }}</li>
           <li>:pushpin:&nbsp;{{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}</li>
@@ -159,7 +160,7 @@ job_type: data_science
       <div class="subsection">
         <h2>{{ tr.contact }}</h2>
         {% assign contact = site.data.cv.contact %}
-        <ul id="contact" class="no-bullet editable">
+        <ul id="contact" class="no-bullet no-wrap editable">
           <li>:telephone_receiver:&nbsp;<a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a></li>
           <li>:e-mail:&nbsp;<a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
           <li>{% include linkedin.html %}&nbsp;<a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a></li>
@@ -216,7 +217,7 @@ job_type: data_science
       <div class="subsection">
         <h2>{{ tr.languages | upcase }}</h2>
         {% assign languages = site.data.cv.languages %}
-        <ul id="languages" class="no-bullet language-list editable">
+        <ul id="languages" class="no-bullet no-wrap language-list editable">
           {% for language in languages %}
             <li>
               <span class="level-description">
@@ -263,7 +264,7 @@ job_type: data_science
         <h2>{{ tr.references | upcase }}</h2>
         {% assign references = site.data.cv.references %}
         <div id="references" class="editable">
-          <ul class="person-list">
+          <ul class="no-wrap person-list">
             {% for reference in references %}
               <li>
                 {{ reference.name }}<br>
