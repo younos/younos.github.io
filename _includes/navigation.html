@@ -9,16 +9,18 @@
     <ul class="navbar-nav">
       {% for item in site.data.navigation %}
         {% if item.name == "CV" %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ item.name }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for cv in site.cv %}
-              <a class="dropdown-item" href="{{ cv.url | relative_url }}">{{ cv.title}}</a>
-            {% endfor %}
-          </div>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ item.name }}
+            </a>
+            <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+              {% for cv in site.cv %}
+                <li>
+                  <a class="dropdown-item" href="{{ cv.url | relative_url }}">{{ cv.title}}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
         {% else %}
           <li class="nav-item{% if page.url == item.link %}'current'{% endif %}">
             <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
