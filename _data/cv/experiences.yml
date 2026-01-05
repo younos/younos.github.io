@@ -3,6 +3,9 @@
 # Experience 1 (oldest)
 - company: IT-Burri
   complement:
+    en: prev. J-M. Burri
+    fr: anc. J-M. Burri
+    de: eh. J-M. Burri
   link: https://www.it-burri.ch/
   period: 04.2014-04.2017
   location:
@@ -72,10 +75,10 @@
 # Experience 3
 - company: Airbus
   complement:
-    en: on behalf of AKKA
-    fr: pour le compte d'AKKA
-    de: im Auftrag von AKKA
-  link: https://www.airbus.com/company/worldwide-presence/germany.html
+    en: via Akkodis
+    fr: via Akkodis
+    de: über Akkodis
+  link: https://www.airbus.com/en/about-us/our-worldwide-presence/airbus-in-europe/airbus-in-germany
   period: 04.2018-08.2020
   location:
     en: "Hamburg, Germany"
@@ -122,9 +125,12 @@
           de: Erstellung des Befundberichts
 
 # Experience 4
-- company: AKKA Technologies
+- company: Akkodis
   complement:
-  link: https://www.akka-technologies.com/germany/
+    en: prev. AKKA Technologies
+    fr: anc. AKKA Technologies
+    de: eh. AKKA Technologies
+  link: https://www.akkodis.com/de/deutschland
   period: 09.2020-12.2020
   location:
     en: "Bremen, Germany"
