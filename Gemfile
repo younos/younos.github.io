@@ -20,10 +20,8 @@ end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
-platforms :windows, :jruby do
+platforms :x64_mingw, :windows, :jruby do
   gem "tzinfo"
   gem "tzinfo-data"
+  gem 'wdm', '>= 0.1.0' # To avoid polling for changes
 end
-
-# To avoid polling for changes
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
