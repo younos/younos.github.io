@@ -30,8 +30,8 @@ github_username: younos
 
 # Build settings
 plugins:
-  - jekyll-feed
   - jemoji
+  - jekyll-feed
   - jekyll-coffeescript
 
 # Exclude from processing.
@@ -59,3 +59,7 @@ collections:
   cv:
     output: true
     permalink: /:collection/:name
+
+sass:
+  # Silence these warnings until bootstrap v6 is available
+  silence_deprecations: ["import", "global-builtin", "if-function", "color-functions"]

@@ -18,8 +18,8 @@ $(document).ready ->
         return
 
     # If click on edit/finish button, set content editable/not editable
-    $('input[id=start-stop-edit]').change ->
-        if ($(this).is(':checked'))
+    $('button[id=start-stop-edit]').click ->
+        if ($(this).attr('aria-pressed') == 'true')
             setContentEditable(true, 'Finish')
         else 
             setContentEditable(false)
@@ -78,7 +78,7 @@ Find all tag with class .editable and change the attribute 'contenteditable' to 
 Toggle 'filled' attribute of .level-circle divs.
 ###
 setContentEditable = (value, text='Edit') ->
-    $('input[id=start-stop-edit]').parent().children('span').text(text)
+    $('button[id=start-stop-edit]').text(text)
     $('#print').prop('disabled', value)
     $('#cv-container').find('.editable').each ->
         $(this).prop('contenteditable', value)
