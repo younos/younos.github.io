@@ -5,7 +5,7 @@
 lang = document.currentScript.getAttribute('lang')
 summaries = {{ site.data.cv.summaries | jsonify }}
 academic_projects = {{ site.data.cv.academic_projects | reverse | jsonify }}
-hard_skills = {{ site.data.cv.hard_skills | jsonify }}
+core_skills = {{ site.data.cv.core_skills | jsonify }}
 
 $(document).ready ->
     
@@ -13,7 +13,7 @@ $(document).ready ->
     $('#selectJobType').change ->
         selectedJobType = $(this).children('option:selected').val()
         updateSummary selectedJobType
-        updateHardSkills selectedJobType
+        updateCoreSkills selectedJobType
         updateProjects selectedJobType
         return
 
@@ -37,15 +37,15 @@ updateSummary = (jobType) ->
     return
 
 ###
-Update the "Hard Skills" subsection based on the job type.
+Update the "Core Skills" subsection based on the job type.
 Select the relevant skills for the selected job type.
 ###
-updateHardSkills = (jobType) ->
+updateCoreSkills = (jobType) ->
     # Remove all skills in list
-    $('#hard-skills').empty()
+    $('#core-skills').empty()
     # Add the skills
-    for skill in hard_skills[jobType]
-        $('#hard-skills').append("<li>#{skill[lang]}</span>")
+    for skill in core_skills[jobType]
+        $('#core-skills').append("<li>#{skill[lang]}</span>")
     return
 
 ###

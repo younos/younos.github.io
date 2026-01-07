@@ -115,7 +115,7 @@ job_type: data_science
 
       <!-- Academic Projects -->
       <div class="subsection">
-        <h2>{{ tr.academic_projects }} :computer:</h2>
+        <h2>{{ tr.academic_projects }} :file_folder:</h2>
         <hr>
         <div id="academic-projects">
           {% assign academic_projects = site.data.cv.academic_projects | reverse %}
@@ -164,31 +164,15 @@ job_type: data_science
           </ul>
       </div>
 
-      <!-- Hard Skills -->
+      <!-- Core Skills -->
       <div class="subsection">
-        <h2>{{ tr.hard_skills | upcase }}</h2>
-        {% assign hard_skills = site.data.cv.hard_skills %}
-        <ul id="hard-skills" class="no-bullet badge-list editable">
-          {% for skill in hard_skills[layout.job_type] %}
+        <h2>{{ tr.core_skills | upcase }}</h2>
+        {% assign core_skills = site.data.cv.core_skills %}
+        <ul id="core-skills" class="no-bullet badge-list editable">
+          {% for skill in core_skills[layout.job_type] %}
             <li>{{ skill[page.lang] }}</li>
           {% endfor %}
         </ul>
-      </div>
-
-      <!-- Programming -->
-      <div class="subsection">
-        <h2>{{ tr.programming | upcase }}</h2>
-        {% assign programming_languages = site.data.cv.programming %}
-        <div id="programming" class="editable">
-          {% for language in programming_languages %}
-            <div>{{ language.name[page.lang] }}</div>
-            <ul class="no-bullet badge-list">
-              {% for library in language.libraries %}
-                <li>{{ library }}</li>
-              {% endfor %}
-            </ul>
-          {% endfor %}
-        </div>
       </div>
 
       <!-- Tools -->

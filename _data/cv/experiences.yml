@@ -44,33 +44,33 @@
             de: Routers, Firewalls und Switches
 
 # Experience 2
-- company: Freelance
-  complement:
-  link:
-  period: 12.2017-02.2018
-  location:
-    en: "Neuchâtel, Switzerland"
-    fr: "Neuchâtel, Suisse"
-    de: "Neuenburg, Schweiz"
-  title:
-    en: ERP Consultant (40%)
-    fr: Consultant ERP (40%)
-    de: ERP-Berater (40%)
-  tasks:
-    - title:
-        en: ERP consulting for a company in the field of technical writing for the industry
-        fr: Expertise-conseil en ERP pour une entreprise dans le domaine de la rédaction technique pour l'industrie
-        de: ERP-Beratung für ein Unternehmen im Bereich der technischen Redaktion für die Industrie
-      subtasks:
-        - en: Business needs analysis
-          fr: Analyse des besoins de l'entreprise
-          de: Analyse der Geschäftsanforderungen
-        - en: Training on ERP (Odoo) use and development
-          fr: Formation sur l'utilisation et le développement de l'ERP (Odoo)
-          de: Schulung zur Nutzung und Entwicklung von ERP (Odoo)
-        - en: Support for development and troubleshooting
-          fr: Support pour le développement et dépannages
-          de: Entwicklungssupport und Fehlerbehebung
+# - company: Freelance
+#   complement:
+#   link:
+#   period: 12.2017-02.2018
+#   location:
+#     en: "Neuchâtel, Switzerland"
+#     fr: "Neuchâtel, Suisse"
+#     de: "Neuenburg, Schweiz"
+#   title:
+#     en: ERP Consultant (40%)
+#     fr: Consultant ERP (40%)
+#     de: ERP-Berater (40%)
+#   tasks:
+#     - title:
+#         en: ERP consulting for a company in the field of technical writing for the industry
+#         fr: Expertise-conseil en ERP pour une entreprise dans le domaine de la rédaction technique pour l'industrie
+#         de: ERP-Beratung für ein Unternehmen im Bereich der technischen Redaktion für die Industrie
+#       subtasks:
+#         - en: Business needs analysis
+#           fr: Analyse des besoins de l'entreprise
+#           de: Analyse der Geschäftsanforderungen
+#         - en: Training on ERP (Odoo) use and development
+#           fr: Formation sur l'utilisation et le développement de l'ERP (Odoo)
+#           de: Schulung zur Nutzung und Entwicklung von ERP (Odoo)
+#         - en: Support for development and troubleshooting
+#           fr: Support pour le développement et dépannages
+#           de: Entwicklungssupport und Fehlerbehebung
 
 # Experience 3
 - company: Airbus
@@ -155,3 +155,49 @@
         - en: Scrum-based organization (daily reports of on-going activities, blocking points, etc.)
           fr: Organisation Scrum (rapports quotidiens des activités en cours, points de blocage, etc.)
           de: Scrum Organisation (tägliche Berichte über laufende Aktivitäten, Blockierungspunkte usw.)
+
+# Experience 5
+- company: dsm-firmenich
+  complement:
+  link: https://www.dsm-firmenich.com
+  period: 05.2021-09.2025
+  location:
+    en: "Kaiseraugst, Switzerland"
+    fr: "Kaiseraugst, Suisse"
+    de: "Kaiseraugst, Schweiz"
+  title:
+    en: Technical Lead
+    fr: Responsable Technique
+    de: Technischer Leiter
+  tasks:
+    - title:
+        en: Technical leadership and stakeholder management
+        fr: Leadership technique et gestion des parties prenantes
+        de: Technische Projektleitung und Stakeholder-Management
+      subtasks:
+        - en: Milestone planning and status reporting aligned with business goals
+          fr: Planification des jalons et rapports d'avancement selon les objectifs métier
+          de: Meilensteinplanung und Statusberichte gemäß den Geschäftszielen
+        - en: "Requirements engineering: functional specs, user stories, and Jira management"
+          fr: "Ingénierie des exigences : spécifications, user stories et gestion Jira"
+          de: "Requirements Engineering: Spezifikationen, User Stories und Jira-Verwaltung"
+        - en: Process optimization through stakeholder demos and sprint retrospectives
+          fr: Optimisation des processus via démos et rétrospectives de sprint
+          de: Prozessoptimierung durch Stakeholder-Demos und Sprint-Retrospektiven
+    - title:
+        en: End-to-end data engineering and analytics (Azure)
+        fr: Ingénierie des données et analytique (Azure)
+        de: End-to-End Data Engineering und Analytics (Azure)
+      subtasks:
+        - en: Integration of diverse data sources into a central data warehouse
+          fr: Intégration de sources de données variées vers un entrepôt central
+          de: Integration diverser Datenquellen in ein zentrales Data Warehouse
+        - en: Data ingestion, validation, and QA via automated ETL pipelines
+          fr: Ingestion, validation et assurance qualité via pipelines ETL automatisés
+          de: Ingestion, Validierung und QS über automatisierte ETL-Pipelines
+        - en: Delivery of interactive BI solutions using Power BI and Power Automate
+          fr: Déploiement de solutions BI via Power BI et Power Automate
+          de: Bereitstellung von BI-Lösungen mit Power BI und Power Automate
+        - en: Data analysis and reporting for scientific publication
+          fr: Analyse de données et rapports pour publication scientifique
+          de: Datenanalyse und Berichterstattung für wissenschaftliche Publikationen

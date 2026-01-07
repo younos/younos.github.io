@@ -5,8 +5,7 @@ en:
   academic_projects: Academic Projects
   about: About me
   contact: Contact
-  hard_skills: Hard Skills
-  programming: Programming
+  core_skills: Core Expertise
   tools: Tools
   languages: Languages
   soft_skills: Soft Skills
@@ -20,8 +19,7 @@ fr:
   academic_projects: Projets Académiques
   about: À mon sujet
   contact: Contact
-  hard_skills: Hard Skills
-  programming: Programmation
+  core_skills: Compétences Clés
   tools: Outils
   languages: Langues
   soft_skills: Soft Skills
@@ -35,8 +33,7 @@ de:
   academic_projects: Akademische Projekte
   about: Über mich
   contact: Kontakt
-  hard_skills: Hard Skills
-  programming: Programmierung
+  core_skills: Kernkompetenzen
   tools: Werkzeuge
   languages: Sprachen
   soft_skills: Soft Skills

@@ -3,19 +3,30 @@ data_science:
   title:
     en: Data Scientist
     fr: Data Scientist
-    de: Datenwissenschaftler
+    de: Data Scientist
   text:
-    en: Being graduated in computer science with a master's degree mainly focused on advanced information processing, I am keen to work in the Data Science world. During one of my last experiences with Airbus Operations GmbH in Hamburg, I worked as a Data Scientist with a focus on predictive maintenance for aircraft systems.
-    fr: Étant diplômé en informatique avec un master principalement axé sur le traitement avancé de l'information, j'aimerais travailler dans le monde de la science des données. Lors de l'une de mes dernières expériences chez Airbus Operations GmbH à Hambourg, j'ai travaillé en tant que Data Scientist en me spécialisant dans la maintenance prédictive des systèmes aéronautiques.
-    de: Als diplomierter Informatiker mit einem Master-Abschluss, der sich hauptsächlich auf fortgeschrittene Informationsverarbeitung konzentriert, bin ich sehr daran interessiert, in der Datenwissenschaft zu arbeiten. Während einer meiner letzten Erfahrungen bei Airbus Operations GmbH in Hamburg arbeitete ich als Datenwissenschaftler mit dem Fokus auf vorausschauende Wartung für Flugzeugsysteme.
+    en: Data Scientist and Technical Lead with experience synthesizing research data into reports and business strategy. Specialized in using Databricks and Power BI to automate the path from raw data sources to stakeholder-ready insights.
+    fr: Data Scientist et Responsable Technique, expert dans la synthèse de données de recherche pour l'élaboration de rapports et de stratégies d'entreprise. Spécialisé dans l'utilisation de Databricks et Power BI pour automatiser le flux des données brutes vers des indicateurs exploitables par l'entreprise.
+    de: Data Scientist und Technical Lead mit Erfahrung in der Aufbereitung von Forschungsdaten für Berichte und Unternehmensstrategien. Spezialisiert auf die Nutzung von Databricks und Power BI, um den Prozess von der Rohdatenquelle bis hin zu entscheidungsrelevanten Insights für Stakeholder zu automatisieren.
+
+# Summary for jobs in Data Engineering
+data_engineering:
+  title:
+    en: Data Engineer
+    fr: Data Engineer
+    de: Data Engineer
+  text:
+    en: Data Engineer and Technical Lead focused on developing end-to-end Azure data pipelines (ADF, Databricks, SQL, Power BI). Experienced in integrating LIMS and other upstream sources into SQL warehouses while maintaining data governance and automated orchestration.
+    fr: Data Engineer et Responsable Technique spécialisé dans le développement de pipelines de données Azure de bout en bout (ADF, Databricks, SQL, Power BI). Expérimenté dans l'intégration de sources LIMS et autres flux amont vers des entrepôts SQL, tout en garantissant la gouvernance des données et l'orchestration automatisée.
+    de: Data Engineer und Technical Lead mit Fokus auf die Entwicklung von End-to-End Azure-Datenpipelines (ADF, Databricks, SQL, Power BI). Erfahren in der Integration von LIMS und anderen Upstream-Quellen in SQL-Warehouses unter Einhaltung von Data-Governance-Standards und automatisierter Orchestrierung.
 
 # Summary for jobs in Software Engineering
 software_engineering:
   title:
     en: Software Engineer
     fr: Ingénieur Logiciel
-    de: Software-Ingenieur
+    de: Software-Entwickler
   text:
-    en: Being graduated in computer science with a focus on advanced information processing, I have a passion for Data Science and Software Engineering. During one of my last experiences in Bremen, I worked as a Software Engineer on a project for Eurofighters (Airbus Defence), developing a GUI in Java for a radar program.
-    fr: Étant diplômé en informatique avec une spécialisation en traitement avancé de l'information, je suis passionné par la science des données et le génie logiciel. Lors de l'une de mes dernières expériences à Brême, j'ai travaillé en tant qu'ingénieur logiciel sur un projet pour Eurofighters (Airbus Defence), développant une interface graphique en Java pour un programme radar.
-    de: Als diplomierter Informatiker mit einem Schwerpunkt auf fortgeschrittener Informationsverarbeitung habe ich eine Leidenschaft für Data Science und Software Engineering. Während einer meiner letzten Erfahrungen in Bremen habe ich als Software-Ingenieur in einem Projekt für Eurofighters (Airbus Defence) gearbeitet und eine GUI in Java für ein Radarprogramm entwickelt.
+    en: Software Engineer and Technical Lead with a background in React, Python, and JavaFX. Specialized in building cloud-native applications and automated workflows within the Azure ecosystem to support data-intensive research projects.
+    fr: Ingénieur Logiciel et Responsable Technique avec une expérience en React, Python et JavaFX. Spécialisé dans la conception d'applications "cloud-native" et de flux de travail automatisés au sein de l'écosystème Azure pour soutenir des projets de recherche intensifs en données.
+    de: Software Engineer und Technical Lead mit fundierten Kenntnissen in React, Python und JavaFX. Spezialisiert auf die Entwicklung von Cloud-native Applikationen und automatisierten Workflows im Azure-Ökosystem zur Unterstützung datenintensiver Forschungsprojekte.

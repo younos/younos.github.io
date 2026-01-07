@@ -1,0 +1,72 @@
+# Core skills for jobs in Data Science
+data_science:
+
+  - en: Big Data Processing
+    fr: Traitement de données massives
+    de: Big-Data-Verarbeitung
+  
+  - en: Statistics
+    fr: Statistiques
+    de: Statistik
+
+  - en: Machine Learning
+    fr: Machine Learning
+    de: Machine Learning
+  
+  - en: Data Synthesis
+    fr: Synthèse des données
+    de: Datensynthese
+
+  - en: Data Visualization
+    fr: Présentation des données
+    de: Datenvisualisierung
+
+# Core skills for jobs in Data Engineering
+data_engineering:
+
+  - en: Azure Cloud
+    fr: Azure Cloud
+    de: Azure Cloud
+  
+  - en: ETL & Orchestration
+    fr: ETL et orchestration des données
+    de: ETL & Daten-Orchestrierung
+  
+  - en: Database Management
+    fr: Gestion de bases de données
+    de: DB-Management
+
+  - en: Data Governance & Quality
+    fr: Gouvernance et qualité des données
+    de: Data Governance & Datenqualität
+  
+  - en: CI/CD Pipelines
+    fr: Pipelines CI/CD
+    de: CI/CD Pipelines
+
+# Core skills for jobs in Software Engineering
+software_engineering:
+
+  - en: Web Frameworks
+    fr: Frameworks Web
+    de: Web Frameworks
+  
+  - en: Front-End
+    fr: Front-End
+    de: Front-End
+  
+  - en: Back-End
+    fr: Back-End
+    de: Back-End
+
+  - en: Database Management
+    fr: Gestion de bases de données
+    de: DB-Management
+  
+  - en: CI/CD Pipelines
+    fr: Pipelines CI/CD
+    de: CI/CD Pipelines
+  
+  - en: Scrum
+    fr: Scrum
+    de: Scrum

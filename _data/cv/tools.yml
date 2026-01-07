@@ -1,38 +1,56 @@
 - name:
-    en: Database
-    fr: Base de données
-    de: Datenbank
+    en: Programming Languages
+    fr: Langages de programmation
+    de: Programmiersprachen
   list:
+    - Python
+    - Java
+    - SQL
+    - JavaScript
+    - TypeScript
+
+- name:
+    en: Web & Desktop
+    fr: Développement Web et Desktop
+    de: Web- & Desktop-Entwicklung
+  list:
+    - React
+    - RoR
+    - Jekyll
+    - JavaFX
+    - HTML5/CSS3
+    - Sass
+
+- name:
+    en: Cloud & Data
+    fr: Cloud et données
+    de: Cloud & Data
+  list:
+    - Azure Data Factory
+    - Azure Functions
+    - Azure Databricks
+    - Power BI
+    - Power Automate
+
+- name:
+    en: Databases
+    fr: Bases de données
+    de: Datenbanken
+  list:
+    - MS SQL Server
     - PostgreSQL
     - MySQL
     - SQLite
     - MongoDB
 
 - name:
-    en: VCS
-    fr: VCS
-    de: VCS
-  list:
-    - GitHub
-    - GitLab
-    - BitBucket
-
-- name:
-    en: Project Management
-    fr: Gestion de projet
-    de: Projektmanagement
+    en: Code Management
+    fr: Gestion de code et processus
+    de: Code-Management & Prozesse
   list:
     - Jira
     - Confluence
-
-- name:
-    en: IDE
-    fr: EDI
-    de: IDE
-  list:
-    - Eclipse
-    - Jupyter
-    - IntelliJ
-    - Pycharm
-    - RubyMine
-    - Visual Studio Code
+    - BitBucket
+    - Azure DevOps
+    - Code Reviews
+    - Scrum
