@@ -251,7 +251,7 @@ job_type: data_science
                 {{ reference.name }}<br>
                 {{ reference.title }}<br>
                 {{ reference.company }}<br>
-                :e-mail: <a href="mailto:{{ reference.email }}">{{ reference.email }}</a>
+                {% include linkedin.html %}&nbsp;<a href="https://www.linkedin.com/in/{{ reference.linkedin }}">{{ reference.linkedin }}</a>
               </li>
             {% endfor %}
           </ul>
