@@ -10,6 +10,7 @@
     de: Angewandte Signalverarbeitung
   types:
     - data_science
+    - data_engineering
   description:
     en: Handwritten Recognition Problem
     fr: Problème de reconnaissance de l'écriture manuscrite
@@ -74,6 +75,7 @@
     fr: Workshop R&D (projet de recherche)
     de: F&E Workshop (Forschungsprojekt)
   types:
+    - data_engineering
     - software_engineering
   description:
     en: "Lamport's Fast Mutual Exclusion Algorithm: An Empirical Study"
@@ -96,6 +98,7 @@
     de: F&E Workshop (Praxisprojekt)
   types:
     - data_science
+    - data_engineering
     - software_engineering
   description:
     en: IFAAR Social Media - Web Scraper
@@ -137,6 +140,7 @@
     de: Masterarbeit
   types:
     - data_science
+    - data_engineering
     - software_engineering
   description:
     en: "Automatic Analysis of a Large Corpus: Obama's Speeches at the White House"
