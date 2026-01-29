@@ -40,6 +40,7 @@ html, body {
         width: 33.33333333%;
         padding-bottom: 0 !important;
         float: left;
+        height: 200vh;
     }
 
     div.subsection {
@@ -52,9 +53,6 @@ html, body {
 
     h3 {
         font-size: 0.9 * $h3-font-size;
-    }
-    h5 {
-        font-size: 0.8 * $h5-font-size;
     }
     a {
         text-decoration: none !important;

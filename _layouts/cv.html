@@ -47,7 +47,10 @@ job_type: data_science
 
       <!--Experience-->
       <div class="subsection">
-        <h2>{{ tr.experience }} :briefcase:</h2>
+        <h2>
+          {{ tr.experience }}
+          <i class="bi bi-briefcase"></i>
+        </h2>
         <hr>
         <div id="experience">
           {% assign experiences = site.data.cv.experiences | reverse %}
@@ -58,15 +61,22 @@ job_type: data_science
             {% endif %}
             <h3 class="editable">{{ experience.title[page.lang] }}</h3>
             <h5>
-              <div class="editable">:spiral_calendar: {{ experience.period }}</div>
-              <div class="editable">:office:
+              <div class="editable">
+                <i class="bi bi-calendar-date"></i>
+                {{ experience.period }}
+              </div>
+              <div class="editable">
+                <i class="bi bi-buildings"></i>
                 {% if experience.link %}
                   <a href="{{ experience.link }}">{{ company }}</a>
                 {% else %}
                   {{ company }}
                 {% endif %}
               </div>
-              <div class="editable">:round_pushpin: {{ experience.location[page.lang] }}</div>
+              <div class="editable">
+                <i class="bi bi-geo"></i>
+                {{ experience.location[page.lang] }}
+              </div>
             </h5>
             <ul class="task-list editable">
               {% for task in experience.tasks %}
@@ -86,7 +96,10 @@ job_type: data_science
 
       <!-- Education -->
       <div class="subsection">
-        <h2>{{ tr.education }} :mortar_board:</h2>
+        <h2>
+          {{ tr.education }}
+          <i class="bi bi-mortarboard"></i>
+        </h2>
         <hr>
         <div id="education">
           {% assign studies = site.data.cv.studies | reverse %}
@@ -99,9 +112,18 @@ job_type: data_science
               {% endif %}
             </h3>
             <h5>
-              <div class="editable">:spiral_calendar: {{ study.period }}</div>
-              <div class="editable">:school: {{ study.school[page.lang] }}</div>
-              <div class="editable">:round_pushpin: {{ study.location[page.lang] }}</div>
+              <div class="editable">
+                <i class="bi bi-calendar-date"></i>
+                {{ study.period }}
+              </div>
+              <div class="editable">
+                <i class="bi bi-bank"></i>
+                {{ study.school[page.lang] }}
+              </div>
+              <div class="editable">
+                <i class="bi bi-geo"></i>
+                {{ study.location[page.lang] }}
+              </div>
             </h5>
             <ul class="task-list editable">
               <li>{{ study.description[page.lang] }}</li>
@@ -112,7 +134,10 @@ job_type: data_science
 
       <!-- Academic Projects -->
       <div class="subsection">
-        <h2>{{ tr.academic_projects }} :file_folder:</h2>
+        <h2>
+          {{ tr.academic_projects }}
+          <i class="bi bi-folder"></i>
+        </h2>
         <hr>
         <div id="academic-projects">
           {% assign academic_projects = site.data.cv.academic_projects | reverse %}
@@ -121,8 +146,14 @@ job_type: data_science
               <h3 class="editable">{{ project.title[page.lang] }}</h3>
               <h4 class="editable">{{ project.description[page.lang] }}</h4>
               <h5>
-                <div class="editable">:spiral_calendar: {{ project.period }}</div>
-                <div class="editable">:school: {{ project.school[page.lang] }}</div>
+                <div class="editable">
+                  <i class="bi bi-calendar-date"></i>
+                  {{ project.period }}
+                </div>
+                <div class="editable">
+                  <i class="bi bi-bank"></i>
+                  {{ project.school[page.lang] }}
+                </div>
               </h5>
               <ul class="task-list editable">
                 <li>Tools: {{ project.tools | join: ", " }}</li>
@@ -144,9 +175,18 @@ job_type: data_science
       <div class="subsection">
         <h2>{{ tr.about }}</h2>
         <ul id="about" class="no-bullet no-wrap editable">
-          <li>:switzerland:&nbsp;{{ personal_data.nationality[page.lang] }}</li>
-          <li>:birthday:&nbsp;{{ personal_data.birthdate }}</li>
-          <li>:pushpin:&nbsp;{{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}</li>
+          <li>
+            <i class="bi bi-globe"></i>
+            {{ personal_data.nationality[page.lang] }}
+          </li>
+          <li>
+            <i class="bi bi-cake2"></i>
+            {{ personal_data.birthdate }}
+          </li>
+          <li>
+            <i class="bi bi-house"></i>
+            {{ personal_data.city[page.lang] }}, {{ personal_data.country[page.lang] }}
+          </li>
         </ul>
       </div>
 
@@ -155,10 +195,19 @@ job_type: data_science
         <h2>{{ tr.contact }}</h2>
         {% assign contact = site.data.cv.contact %}
         <ul id="contact" class="no-bullet no-wrap editable">
-          <li>:telephone_receiver:&nbsp;<a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a></li>
-          <li>:e-mail:&nbsp;<a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
-          <li>{% include linkedin.html %}&nbsp;<a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a></li>
-          </ul>
+          <li>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:{{ contact.phone | replace: ' ', '' }}">{{ contact.phone }}</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope-at"></i>
+            <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+          </li>
+          <li>
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/{{ contact.linkedin }}">{{ contact.linkedin }}</a>
+          </li>
+        </ul>
       </div>
 
       <!-- Core Skills -->
@@ -248,7 +297,8 @@ job_type: data_science
                 {{ reference.name }}<br>
                 {{ reference.title }}<br>
                 {{ reference.company }}<br>
-                {% include linkedin.html %}&nbsp;<a href="https://www.linkedin.com/in/{{ reference.linkedin }}">{{ reference.linkedin }}</a>
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/in/{{ reference.linkedin }}">{{ reference.linkedin }}</a>
               </li>
             {% endfor %}
           </ul>

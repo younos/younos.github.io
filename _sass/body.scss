@@ -110,26 +110,26 @@
     .emoji {
         height: 1.5rem;
         width: 1.5rem;
-        h2 > & {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        h5 > div > & {
-            margin-top: -0.25rem;
-            margin-right: 0.25rem;
-            &[title=":round_pushpin:"] {
-                margin-left: -0.5rem;
-                margin-right: -0.25rem;
-            }
+    }
+
+    h2 > & {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    h5 > div > i.bi {
+        margin-right: 0.25rem;
+        &.bi-geo {
+            margin-left: -0.25rem;
+            margin-right: 0rem;
         }
     }
     
     div.subsection {
-        margin: 40px 0 40px 0;   
+        margin: 2.5rem 0 2.5rem 0;   
     }
     
     p.summary {
-        font-family: "Arial Light", sans-serif;
+        font-size: 1.2 * $font-size-base;
         text-align: justify;
     }
     h1 {
@@ -167,7 +167,8 @@
     hr {
         margin: 10px 0 20px 0;
         height: 1px;
-        background-color: map-get($theme-colors, "success");
+        color: map-get($theme-colors, "warning");
+        opacity: 1;
     }
     a:not(:hover) {
         color: map-get($theme-colors, "dark");
@@ -175,13 +176,11 @@
     ul {
         &.task-list {
             padding-left: 18px;
+            margin-bottom: 2rem;
             > li {
                 > p {
                     font-size: 1.1 * $font-size-base;
                     margin-bottom: 0;
-                }
-                > ol {
-                    font-size: 0.95 * $font-size-base;
                 }
             }
         }
