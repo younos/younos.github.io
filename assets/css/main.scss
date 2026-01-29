@@ -1,0 +1,10 @@
+---
+---
+
+// 1. Main body rules for website
+@import "body";
+
+// 2. Print rules for exporting the CV as PDF
+@media print {
+  @import "print";
+}

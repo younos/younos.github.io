@@ -1,0 +1,228 @@
+//////////////////////////////////////////////////////////
+// IMPORTS //
+//////////////////////////////////////////////////////////
+
+// 1. Include functions first (to manipulate colors, SVGs, calc, etc)
+@import "./bootstrap/functions";
+
+// 2. Include any default variable overrides here
+@import "./variables";
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "./bootstrap/variables";
+@import "./bootstrap/variables-dark";
+
+// 4. Include any default map overrides here
+
+
+// 5. Include remainder of required parts
+@import "./bootstrap/maps";
+@import "./bootstrap/mixins";
+@import "./bootstrap/root";
+
+// 6. Include any other optional stylesheet partials as desired; list below is not inclusive of all available stylesheets
+@import "./bootstrap/utilities";
+@import "./bootstrap/reboot";
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/containers";
+@import "./bootstrap/grid";
+@import "./bootstrap/buttons";
+@import "./bootstrap/transitions";
+@import "./bootstrap/dropdown";
+@import "./bootstrap/button-group";
+@import "./bootstrap/nav";
+@import "./bootstrap/navbar";
+@import "./bootstrap/badge";
+@import "./bootstrap/helpers";
+@import "./bootstrap/utilities/api";
+
+
+//////////////////////////////////////////////////////////
+// CUSTOM RULES //
+//////////////////////////////////////////////////////////
+
+// Button Bar
+
+#divSelectJobType, #darkMode {
+    visibility: hidden;
+}
+
+.btn-secondary {
+    &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
+        background-color: #adf1b4 !important;
+        border-color: #687f88 !important;
+        color: map-get($theme-colors, "dark") !important;
+    }
+}
+
+// Editable elements rule
+
+.editable[contenteditable="true"] {
+    border: solid 1px $black;
+}
+
+// Containers rules
+
+.container {
+    background-color: $white;
+    min-height: calc(100vh - 56px - 1rem);
+}
+
+// CV container rules
+
+.cv.container {
+
+    #primary-section {
+        padding: 50px !important;
+    }
+
+    #secondary-section {
+        padding: 20px !important;
+        border-style: solid;
+        border-color: map-get($theme-colors, "warning");
+        border-width: 0 5px 0 5px;
+        color: black;
+        background-color: map-get($theme-colors, "success");
+        img.picture {
+            @extend .img-fluid;
+            @extend .d-block;
+            @extend .m-auto;
+            @extend .rounded-circle;
+            border: 5px solid map-get($theme-colors, "warning");
+            width: 75%;
+        }
+        .level-circle {
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid;
+            border-radius: 15px;
+            margin: 1px;
+            &[filled="true"]{
+                background-color: map-get($theme-colors, "warning");
+            }
+            &[filled="false"] {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .emoji {
+        height: 1.5rem;
+        width: 1.5rem;
+        h2 > & {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        h5 > div > & {
+            margin-top: -0.25rem;
+            margin-right: 0.25rem;
+            &[title=":round_pushpin:"] {
+                margin-left: -0.5rem;
+                margin-right: -0.25rem;
+            }
+        }
+    }
+    
+    div.subsection {
+        margin: 40px 0 40px 0;   
+    }
+    
+    p.summary {
+        font-family: "Arial Light", sans-serif;
+        text-align: justify;
+    }
+    h1 {
+        font-size: 1.2 * $h1-font-size;
+        text-transform: uppercase;
+    }
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        text-transform: uppercase;
+        
+    }
+    #secondary-section h2 {
+        font-size: 0.8 * $h2-font-size;
+    }
+    h3 {
+        font-size: 0.9 * $h3-font-size;
+    }
+    h4 {
+        font-size: 0.7 * $h4-font-size;
+    }
+    h5 {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Arial Light", sans-serif;
+        font-size: 0.9 * $h5-font-size;
+        > div {
+            white-space: nowrap;
+            + div {
+                margin-left: 15px;
+            }
+        }
+    }
+    hr {
+        margin: 10px 0 20px 0;
+        height: 1px;
+        background-color: map-get($theme-colors, "success");
+    }
+    a:not(:hover) {
+        color: map-get($theme-colors, "dark");
+    }
+    ul {
+        &.task-list {
+            padding-left: 18px;
+            > li {
+                > p {
+                    font-size: 1.1 * $font-size-base;
+                    margin-bottom: 0;
+                }
+                > ol {
+                    font-size: 0.95 * $font-size-base;
+                }
+            }
+        }
+        &.no-bullet {
+            list-style: none;
+            padding-left: 0px;
+        }
+        &.no-wrap > li {
+            white-space: nowrap;
+        }
+        &.badge-list {
+            display: flex;
+            flex-flow: row wrap;
+            margin-bottom: 5px;
+            > li {
+                @extend .badge;
+                background-color: map-get($theme-colors, "warning");
+                margin: 3px 2px 3px 2px;
+            }
+        }
+        &.language-list {
+            > li {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                > .level-description, .level-circle-container {
+                    display: inline-flex;
+                    flex-wrap: nowrap;
+                    flex: 1;
+                }
+            }
+        }
+        &.person-list {
+            list-style: disc;
+            padding-left: 20px;
+            li {
+                margin-bottom: 10px;
+            }
+            li::marker {
+                color: map-get($theme-colors, "warning");
+            }
+        }
+    }
+}

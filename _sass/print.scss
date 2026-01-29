@@ -1,0 +1,66 @@
+// Page Configuration
+@page {
+    margin: 0;         /* Removes browser-added headers/footers */
+}
+
+// Global Overrides
+* {
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+    print-color-adjust: exact !important;         /* Modern standard & Firefox */
+    box-sizing: border-box !important;
+}
+
+html, body {
+    font-size: 8pt;
+    background-color: #ffffff;
+}
+
+// UI Cleanup
+.navbar, #btn-toolbar {
+    display: none !important;
+}
+
+.cv.container {
+
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    background-color: transparent;
+
+    #primary-section {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+        padding-bottom: 0 !important;
+        float: left; /* Ensures side-by-side layout in older print engines */
+    }
+
+    #secondary-section {
+        font-size: 1.25rem;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        padding-bottom: 0 !important;
+        float: left;
+    }
+
+    div.subsection {
+        // This is the modern standard
+        break-inside: avoid;
+        
+        // Legacy support for older PDF engines (like older WebKit)
+        page-break-inside: avoid;
+    }
+
+    h3 {
+        font-size: 0.9 * $h3-font-size;
+    }
+    h5 {
+        font-size: 0.8 * $h5-font-size;
+    }
+    a {
+        text-decoration: none !important;
+        color: inherit; /* Prevents blue/underlined links in some browsers */
+    }
+    ul.badge-list > li {
+        border: none;
+    }
+}
