@@ -54,8 +54,8 @@ Select the relevant projects for the selected job type.
 ###
 updateProjects = (jobType) ->
     # Declare data
-    spiral_calendar = '<img class="emoji" title=":spiral_calendar:" alt=":spiral_calendar:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d3.png">'
-    school = '<img class="emoji" title=":school:" alt=":school:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png">'
+    calendar = '<i class="bi bi-calendar-date"></i>'
+    school = '<i class="bi bi-bank"></i>'
     # Remove all projects
     $('#academic-projects').empty()
     # Loop over projects for selected jobType and add them to the div
@@ -64,7 +64,10 @@ updateProjects = (jobType) ->
             html = """
                    <h3 class="editable">#{project.title[lang]}</h3>
                    <h4 class="editable">#{project.description[lang]}</h4>
-                   <h5 class="editable">#{spiral_calendar} #{project.period}&nbsp;&nbsp;&nbsp;#{school} #{project.school[lang]}</h5>
+                   <h5>
+                       <div class="editable">#{calendar} #{project.period}</div>
+                       <div class="editable">#{school} #{project.school[lang]}</div>
+                   </h5>
                    <ul class="task-list editable">
                      <li>Tools: #{project.tools.join(", ")}</li>
                    </ul>
