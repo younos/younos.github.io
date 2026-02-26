@@ -6,19 +6,18 @@ job_type: data_science
 
 <!-- Document controls -->
 <div id="btn-toolbar" class="btn-toolbar justify-content-between m-2" role="toolbar" aria-label="Toolbar with button groups">
-  <div id="divSelectJobType" class="input-group">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="selectJobType">Job Type</label>
-    </div>
-    <select class="custom-select w-50" id="selectJobType">
+  <div class="input-group">
+    <label class="input-group-text" for="selectJobType" class="form-label">Show me your</label>
+    <select class="form-select" id="selectJobType" aria-label="Profile">
       {% for summary_hash in summaries %}
         <option value="{{ summary_hash[0] }}">{{ summary_hash[1].title[page.lang] }}</option>
       {% endfor %}
     </select>
+    <label class="input-group-text" for="selectJobType" class="form-label">skills</label>
   </div>
   <div>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <button id="start-stop-edit" type="button" class="btn btn-secondary" data-bs-toggle="button">Edit</button>
+      <button id="start-stop-edit" type="button" class="btn btn-secondary visually-hidden-focusable" data-bs-toggle="button">Edit</button>
     </div>
     <div class="btn-group" role="group">
       <button id="print" type="button" class="btn btn-primary" onClick="window.print()">Print</button>

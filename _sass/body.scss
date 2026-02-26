@@ -27,6 +27,7 @@
 @import "./bootstrap/images";
 @import "./bootstrap/containers";
 @import "./bootstrap/grid";
+@import "./bootstrap/forms";
 @import "./bootstrap/buttons";
 @import "./bootstrap/transitions";
 @import "./bootstrap/dropdown";
@@ -43,10 +44,6 @@
 //////////////////////////////////////////////////////////
 
 // Button Bar
-
-#divSelectJobType, #darkMode {
-    visibility: hidden;
-}
 
 .btn-secondary {
     &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
